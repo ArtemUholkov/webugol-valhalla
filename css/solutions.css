@@ -14,8 +14,8 @@
   width: 100%;
   height: 700px;
   border-radius: 60px 60px 0px 0px;
-  border-top: 1px solid #6c01f6;
-  background: linear-gradient(180deg, #390181 0%, #0f0022 16.13%, #111 87.46%);
+
+  background: transparent;
   outline: 0;
 }
 .section_title_wrapper {
@@ -39,7 +39,7 @@
   margin-bottom: 56px;
 }
 .swiper-wrapper {
-  gap: 12px;
+  gap: 0px;
 }
 .swiper-srapper:first-child {
   padding-left: 150px;
@@ -53,7 +53,7 @@
   align-items: center;
   padding: 45px 32px;
   height: 450px;
-  background: #1b181f;
+  background: var(--usual-decorations);
   border-radius: 46px;
 }
 
@@ -77,13 +77,14 @@
   position: inherit;
   width: 60px;
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(2px);
   border-radius: 50%;
   transition: all 0.5s;
 }
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background-color: rgba(255, 255, 255, 0.06);
+  background-color: rgba(0, 0, 0, 0.06);
   transition: all 0.5s;
 }
 .swiper-button-next img,
@@ -129,14 +130,14 @@
   margin-bottom: 16px;
 }
 .solutions_slider_text {
-  color: rgba(255, 255, 255, 0.57);
+  color: var(--main-text-color);
   font-size: 18px;
   font-weight: 400;
   line-height: 120%;
   text-align: left;
 }
 .disabled_swiper_button {
-  background-color: rgba(255, 255, 255, 0.06);
+  background-color: rgba(0, 0, 0, 0.06);
   transition: all 0.5s;
 }
 .disabled_swiper_button img {

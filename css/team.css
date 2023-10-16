@@ -19,3 +19,14 @@
   align-items: flex-start;
   width: 100%;
 }
+.team_swiper_wrapper {
+  gap: 0;
+}
+.swiper_wrapper {
+  gap: 0;
+}
+@media (max-width: 1510px) {
+  .team_swiper_wrapper {
+    gap: 0;
+  }
+}

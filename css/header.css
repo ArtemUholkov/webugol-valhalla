@@ -1,15 +1,15 @@
 header {
   /* background-color: transparent; */
   width: 100%;
-  height: 100px;
+  height: 110px;
   position: fixed;
   top: 0;
   z-index: 100;
   transition: all 0.5s;
 }
 .active {
-  background-color: rgba(34, 34, 34, 0.5);
-  backdrop-filter: blur(10px);
+  background-color: rgba(34, 34, 34, 0.4);
+  /* backdrop-filter: blur(10px); */
   transition: all 0.5s;
 }
 .header_wrapper {
@@ -49,7 +49,7 @@ header {
   z-index: 100;
 }
 .main-logo {
-  height: 60px;
+  height: 90px;
 }
 .logo-color {
   width: 100%;
@@ -80,6 +80,9 @@ header {
   align-items: center;
   margin-left: 31px;
 }
+.active .nav_elem {
+  color: #fff;
+}
 .nav_elem {
   position: relative;
   text-decoration: none;
@@ -91,7 +94,7 @@ header {
   cursor: pointer;
 }
 .nav_elem:hover {
-  color: #cacaca;
+  color: #737373;
   transition: 0.5s;
 }
 .nav_elem:after {

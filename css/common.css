@@ -119,12 +119,12 @@ table {
 
 /*COLOR VARIABLES START*/
 :root {
-  --main-bg-color: #111111;
-  --usual-decorations: #ff8902;
-  --main-text-color: #ffffff;
-  --unusual-decor: #ff9c00;
+  --main-bg-color: #fff;
+  --usual-decorations: #fc021f;
+  --main-text-color: #000;
+  --unusual-decor: #fc021f;
   --subcolor: rgba(255, 255, 255, 0.57);
-  --section--title-text: #6c01f6;
+  --section--title-text: #1b181f;
   --section-subtitles-color: rgba(242, 245, 247, 0.63);
 }
 /*COLOR VARIABLES END*/
@@ -140,7 +140,7 @@ html {
   gap: 10px;
   padding: 15px 24px;
   border-radius: 58px;
-  background: #ff8902;
+  background: var(--usual-decorations);
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -150,17 +150,17 @@ html {
   text-decoration: none;
 }
 .main_button:hover {
-  background-color: #c57b27;
+  background-color: #f20521ad;
   transition: all 0.5s;
   text-decoration: none;
-  color: var(--main-text-color);
+  color: rgba(255, 255, 255, 0.71);
 }
 body {
   position: relative;
   width: 100%;
   margin: 0 auto;
   z-index: 2;
-  background: #111;
+  background: transparent;
 }
 h1 {
   position: relative;
@@ -169,7 +169,7 @@ h1 {
   font-weight: 700;
   line-height: 110%;
   text-transform: uppercase;
-  color: white;
+  color: black;
   max-width: 722px;
   margin-top: 0%;
 }
@@ -182,9 +182,9 @@ h1 {
 h2 {
   padding: 12px 32px;
   border-radius: 33px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
-  color: var(--section-subtitles-color);
+  color: rgba(252, 2, 31, 0.63);
   text-align: center;
   font-size: 16px;
   font-weight: 400;
