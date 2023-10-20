@@ -258,7 +258,7 @@ input[type='text'] {
   color: white;
   background-color: transparent;
   border: none;
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px rgb(188, 188, 188);
   outline: none;
   z-index: 20;
 }
@@ -269,8 +269,8 @@ input[type='text']:focus {
 input[type='text']:focus ~ label,
 input[type='text']:valid ~ label {
   top: -60px;
-  font-size: 11px;
-  color: white;
+  font-size: 18px;
+  color: rgb(142, 142, 142);
 }
 
 input[type='tel'] {
@@ -283,7 +283,7 @@ input[type='tel'] {
   color: white;
   background-color: transparent;
   border: none;
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px rgb(188, 188, 188);
   outline: none;
   z-index: 20;
 }
@@ -294,8 +294,8 @@ input[type='tel']:focus {
 input[type='tel']:focus ~ label,
 input[type='tel']:valid ~ label {
   top: -60px;
-  font-size: 11px;
-  color: white;
+  font-size: 18px;
+  color: rgb(142, 142, 142);
 }
 
 input[type='email'] {
@@ -308,7 +308,7 @@ input[type='email'] {
   color: white;
   background-color: transparent;
   border: none;
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px rgb(188, 188, 188);
   outline: none;
   z-index: 20;
 }
@@ -319,8 +319,8 @@ input[type='email']:focus {
 input[type='email']:focus ~ label,
 input[type='email']:valid ~ label {
   top: -60px;
-  font-size: 11px;
-  color: white;
+  font-size: 18px;
+  color: rgb(142, 142, 142);
 }
 
 .form_button {
