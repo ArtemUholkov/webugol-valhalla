@@ -164,13 +164,13 @@ body {
 }
 h1 {
   position: relative;
-  text-align: center;
+  text-align: left;
   font-size: 32px;
   font-weight: 700;
   line-height: 110%;
   text-transform: uppercase;
   color: var(--unusual-decor);
-  max-width: 500px;
+  width: 500px;
   margin-top: 0%;
 }
 .container {
