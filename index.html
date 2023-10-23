@@ -117,7 +117,7 @@
                 src="img/main/1.webp"
                 alt=""
                 class="mob_slider_image"
-                style="max-width: 100%; height: auto; padding-left: 20px; padding-right: 20px"
+                style="max-width: 95%; height: auto; padding-left: 20px; padding-right: 20px"
               />
             </div>
             <div
@@ -133,7 +133,7 @@
                 src="img/main/2.webp"
                 alt=""
                 class="mob_slider_image"
-                style="max-width: 100%; height: auto; padding-left: 20px; padding-right: 20px"
+                style="max-width: 95%; height: auto; padding-left: 20px; padding-right: 20px"
               />
             </div>
             <div
@@ -149,7 +149,39 @@
                 src="img/main/3.webp"
                 alt=""
                 class="mob_slider_image"
-                style="max-width: 100%; height: auto; padding-left: 20px; padding-right: 20px"
+                style="max-width: 95%; height: auto; padding-left: 20px; padding-right: 20px"
+              />
+            </div>
+            <div
+              class="swiper-slide main_mob_slide"
+              style="
+                background-color: var(--main-bg-color);
+                padding: 0;
+                height: auto;
+                min-height: 220px;
+              "
+            >
+              <img
+                src="img/main/4.webp"
+                alt=""
+                class="mob_slider_image"
+                style="max-width: 95%; height: auto; padding-left: 20px; padding-right: 20px"
+              />
+            </div>
+            <div
+              class="swiper-slide main_mob_slide"
+              style="
+                background-color: var(--main-bg-color);
+                padding: 0;
+                height: auto;
+                min-height: 220px;
+              "
+            >
+              <img
+                src="img/main/5.webp"
+                alt=""
+                class="mob_slider_image"
+                style="max-width: 95%; height: auto; padding-left: 20px; padding-right: 20px"
               />
             </div>
           </div>
@@ -982,6 +1014,10 @@
         slidesPerView: 1,
         autoplay: true,
         loop: true,
+        spaceBetween: 40,
+        autoplay: {
+          delay: 1500,
+        },
       });
     </script>
     <script>
@@ -989,6 +1025,7 @@
         slidesOffsetAfter: 100,
         slidesOffsetBefore: 150,
         slidesPerView: 4.7,
+
         navigation: {
           nextEl: '.solutions-button-next',
           prevEl: '.solutions-button-prev',
