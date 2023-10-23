@@ -12,14 +12,14 @@
   padding: 80px 60px;
   border-radius: 60px;
 
-  background: linear-gradient(179deg, #6c01f6 -11.7%, #1b181f 98.91%);
+  background: linear-gradient(179deg, var(--usual-decorations) -11.7%, #1b181f 98.91%);
 }
 .ready_title {
   text-align: center;
   font-size: 52px;
   font-weight: 600;
   line-height: 120%;
-  color: var(--main-text-color);
+  color: var(--main-bg-color);
   margin-bottom: 16px;
 }
 .ready_subtitle {
@@ -29,7 +29,7 @@
   line-height: 120%;
   text-align: center;
   margin-bottom: 32px;
-  color: var(--main-text-color);
+  color: var(--main-bg-color);
   max-width: 552px;
 }
 .ready_button {

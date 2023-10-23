@@ -32,11 +32,7 @@
         <nav class="navbar">
           <a href="index.html" class="logo_wrapper">
             <img src="img/global/logo.png" alt="logo" class="main-logo logo-white" />
-            <img
-              src="img/global/logo-color.png"
-              alt="logo"
-              class="main-logo logo-hide logo-color"
-            />
+            <img src="img/global/logo.png" alt="logo" class="main-logo logo-hide logo-color" />
           </a>
 
           <ul class="navbar_menu">
@@ -104,6 +100,71 @@
           <img src="img/main/5.webp" alt="" class="main_stat_item" />
         </div>
         <h1>Get free market analysis<br />before investing in<br />digital marketing!</h1>
+        <div class="swiper main_mob_swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div
+              class="swiper-slide main_mob_slide"
+              style="
+                background-color: var(--main-bg-color);
+                padding: 0;
+                height: auto;
+                min-height: 220px;
+              "
+            >
+              <img
+                src="img/main/1.webp"
+                alt=""
+                class="mob_slider_image"
+                style="max-width: 100%; height: auto; padding-left: 20px; padding-right: 20px"
+              />
+            </div>
+            <div
+              class="swiper-slide main_mob_slide"
+              style="
+                background-color: var(--main-bg-color);
+                padding: 0;
+                height: auto;
+                min-height: 220px;
+              "
+            >
+              <img
+                src="img/main/2.webp"
+                alt=""
+                class="mob_slider_image"
+                style="max-width: 100%; height: auto; padding-left: 20px; padding-right: 20px"
+              />
+            </div>
+            <div
+              class="swiper-slide main_mob_slide"
+              style="
+                background-color: var(--main-bg-color);
+                padding: 0;
+                height: auto;
+                min-height: 220px;
+              "
+            >
+              <img
+                src="img/main/3.webp"
+                alt=""
+                class="mob_slider_image"
+                style="max-width: 100%; height: auto; padding-left: 20px; padding-right: 20px"
+              />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+        </div>
+        <a href="#contacts" class="main_button mob_button main_mob_button" onclick="scrollToSub()"
+          >Get started <img class="arrow_icon" src="img/global/icon_arrow.svg" alt="icon"
+        /></a>
         <div class="main_form_wrapper">
           <div class="sub_form">
             <form action="https://postmail.invotes.com/send" method="post" id="email_form">
@@ -129,7 +190,7 @@
                   id="submit_form"
                   type="submit"
                   value="Begin Your Journey"
-                  class="main_button form_button"
+                  class="main_button form_button main_form_button"
                 />
               </div>
               <input type="hidden" name="access_token" value="" />
@@ -190,8 +251,7 @@
     <section class="numbers" id="numbers">
       <div class="number_wrapper">
         <p class="numbers_text pc_text" data-aos="fade-up" data-aos-duration="2000">
-          Here are the numbers generated for our worldwide clients with digital marketing solutions
-          in August 2023:
+          Here are the numbers generated for our clients for the last 3 years:
         </p>
         <p class="numbers_text mob_text" data-aos="fade-up" data-aos-duration="1000">
           Results generated in August 2023:
@@ -200,11 +260,11 @@
           <div class="numbers_items_line_wrapper" data-aos="fade-up" data-aos-duration="1000">
             <span class="numbers_deco_line"></span>
             <div class="numbers_item">
-              <div class="numbers_item_number">$6MM+</div>
-              <p class="numbers_item_subtext">generated sales a month</p>
+              <div class="numbers_item_number">$25MM+ generated revenue</div>
+              <p class="numbers_item_subtext"></p>
             </div>
           </div>
-          <div class="numbers_items_line_wrapper" data-aos="fade-up" data-aos-duration="1500">
+          <!-- <div class="numbers_items_line_wrapper" data-aos="fade-up" data-aos-duration="1500">
             <span class="numbers_deco_line"></span>
             <div class="numbers_item">
               <div class="numbers_item_number">4000+</div>
@@ -217,7 +277,7 @@
               <div class="numbers_item_number">22%+</div>
               <p class="numbers_item_subtext">of monthly growth in sales</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="running-line lefttoright pad-fix" data-aos="zoom-in" data-aos-duration="2000">
@@ -391,6 +451,18 @@
               </div>
             </div>
           </div>
+          <div class="swiper-slide">
+            <div class="slide_content_wrapper">
+              <img src="img/solutions/influence.svg" alt="mail" class="solutions_slider_icon" />
+              <div class="solutions_slider_text_wrapper">
+                <p class="solutions_slider_title">Influencers marketing</p>
+                <p class="solutions_slider_text solutions_last_slide">
+                  Get your visibility on a brand new level with our top-rated influencers across the
+                  US
+                </p>
+              </div>
+            </div>
+          </div>
           <!-- <div class="swiper-slide last_slide">Slide 9</div> -->
         </div>
       </div>
@@ -446,9 +518,9 @@
           </div>
           <div class="wr">
             <div class="process_items_item" data-aos="fade-right" data-aos-delay="1500">
-              <p class="solutions_slider_title process_title">Risk-free month to get the results</p>
+              <p class="solutions_slider_title process_title">Launching, testing, optimizing</p>
               <p class="solutions_slider_text">
-                Managing your advertising for a month to show the difference
+                Launching and optimizing your ads to achieve exceptional results
               </p>
             </div>
           </div>
@@ -486,9 +558,9 @@
               <span class="process_mob_number_in_box">3</span>
             </div>
             <div class="process_mob_items_item_arrow_text">
-              <p class="process_mob_items_text_title">Risk-free month to get the results</p>
+              <p class="process_mob_items_text_title">Launching, testing, optimizing</p>
               <p class="process_mob_items_text_text">
-                Managing your advertising for a month to show the difference
+                Launching and optimizing your ads to achieve exceptional results
               </p>
             </div>
           </div>
@@ -802,7 +874,7 @@
             />
           </form>
         </div>
-        <img src="img/sub/logo.png" alt="logo" class="sub_logo" />
+        <!-- <img src="img/sub/logo.png" alt="logo" class="sub_logo" /> -->
       </div>
     </section>
     <div class="deco_line_wrapper">
@@ -905,6 +977,13 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- Swiper JS -->
     <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.main_mob_swiper', {
+        slidesPerView: 1,
+        autoplay: true,
+        loop: true,
+      });
+    </script>
     <script>
       var swiper = new Swiper('.mySwiper', {
         slidesOffsetAfter: 100,

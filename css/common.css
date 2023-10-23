@@ -207,7 +207,7 @@ h2 {
   max-width: 613px;
   height: 490px;
   width: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--unusual-decor);
   padding: 50px;
   border-radius: 32px;
   backdrop-filter: blur(12px);
@@ -228,7 +228,14 @@ form {
   margin-top: 10px;
   height: 328px;
 }
-
+.main_form_button {
+  background-color: white;
+  color: #000;
+}
+.main_form_button:hover {
+  background-color: rgba(255, 255, 255, 0.816);
+  color: #313131;
+}
 label {
   position: relative;
   display: inline-block;
@@ -257,7 +264,7 @@ input[type='text'] {
   color: white;
   background-color: transparent;
   border: none;
-  border-bottom: solid 1px rgb(188, 188, 188);
+  border-bottom: solid 1px rgb(227, 227, 227);
   outline: none;
   z-index: 20;
 }
@@ -269,7 +276,7 @@ input[type='text']:focus ~ label,
 input[type='text']:valid ~ label {
   top: -60px;
   font-size: 18px;
-  color: rgb(142, 142, 142);
+  color: rgb(253, 253, 253);
 }
 
 input[type='tel'] {
@@ -282,7 +289,7 @@ input[type='tel'] {
   color: white;
   background-color: transparent;
   border: none;
-  border-bottom: solid 1px rgb(188, 188, 188);
+  border-bottom: solid 1px rgb(227, 227, 227);
   outline: none;
   z-index: 20;
 }
@@ -294,7 +301,7 @@ input[type='tel']:focus ~ label,
 input[type='tel']:valid ~ label {
   top: -60px;
   font-size: 18px;
-  color: rgb(142, 142, 142);
+  color: rgb(255, 255, 255);
 }
 
 input[type='email'] {
@@ -307,7 +314,7 @@ input[type='email'] {
   color: white;
   background-color: transparent;
   border: none;
-  border-bottom: solid 1px rgb(188, 188, 188);
+  border-bottom: solid 1px rgb(227, 227, 227);
   outline: none;
   z-index: 20;
 }
@@ -319,7 +326,7 @@ input[type='email']:focus ~ label,
 input[type='email']:valid ~ label {
   top: -60px;
   font-size: 18px;
-  color: rgb(142, 142, 142);
+  color: rgb(255, 255, 255);
 }
 
 .form_button {
@@ -331,6 +338,7 @@ input[type='email']:valid ~ label {
 .form_button:hover {
   cursor: pointer;
 }
+
 /*COMMONT STYLES END*/
 @media (max-width: 1600px) {
   .container {

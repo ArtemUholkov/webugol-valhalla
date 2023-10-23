@@ -30,9 +30,9 @@
   gap: 34px;
 }
 .numbers_deco_line {
-  height: 127px;
+  height: 90px;
   width: 1px;
-  background: rgba(242, 245, 247, 0.63);
+  background: var(--usual-decorations);
 }
 .numbers_item {
   display: flex;
