@@ -129,6 +129,9 @@
 .main_mob_swiper {
   display: none;
 }
+.main_mob_button {
+  display: none;
+}
 @keyframes righttoleft {
   from {
     transform: translateX(0%);
@@ -313,6 +316,7 @@
     max-height: 400px;
   }
   .main_mob_button {
+    display: block;
     margin-bottom: 20px;
   }
 }
