@@ -318,7 +318,7 @@
     max-height: 400px;
   }
   .main_mob_button {
-    display: block;
+    display: flex;
     margin-bottom: 20px;
   }
 }
