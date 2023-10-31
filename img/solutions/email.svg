@@ -1,8 +1,14 @@
 <svg width="133" height="132" viewBox="0 0 133 132" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M46.7082 90.9545L8.46897 90.8353L8.22189 15.9871L125.489 16.3526L125.736 91.2008L90.0459 91.0895" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M125.036 16.9179L67.0161 59.0422L8.73636 16.5808" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M125.794 91.0507L82.507 47.6484" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M8.36145 90.7969L51.358 47.6683" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M49.1571 75.8281L66.8689 80.6068L84.5802 85.3854L71.7531 97.9381L58.9257 110.491L54.0418 93.1597L49.1571 75.8281Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
-<path d="M71.7815 97.8667L90.0731 115.766" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M16.2667 79.1302L33.6754 61.7215L42.3798 70.4259L61.9646 50.8411L72.845 61.7215L116.367 18.1998" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M103.31 18.1998L116.367 18.1998L116.367 31.2563" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M116.367 42.1368L116.367 113.948" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M16.2667 92.1869L16.2667 113.948" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M27.1472 76.9542L27.1472 113.948" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M38.0278 83.4825L38.0278 113.948" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M48.9083 79.1303L48.9083 113.948" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M59.7883 68.2499L59.7883 113.948" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M70.669 74.7781L70.669 113.948" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M81.5494 70.4259L81.5494 113.948" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M92.4299 59.5455L92.4299 113.948" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M103.31 50.8411L103.31 113.948" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
 </svg>
