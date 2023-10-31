@@ -12,7 +12,7 @@
 }
 .numbers_text {
   max-width: 1153px;
-  color: var(--usual-decorations);
+  color: white;
   font-size: 40px;
   font-weight: 600;
   line-height: 140%;

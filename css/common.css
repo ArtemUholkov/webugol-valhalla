@@ -200,12 +200,12 @@ h2 {
 }
 .main_form_wrapper {
   max-width: 500px;
-  margin-top: 40px;
+  margin-top: 20px;
   width: 100%;
 }
 .sub_form {
   max-width: 613px;
-  height: 490px;
+  height: 470px;
   width: 100%;
   background-color: var(--unusual-decor);
   padding: 50px;
