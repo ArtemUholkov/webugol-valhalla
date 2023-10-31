@@ -120,9 +120,9 @@ table {
 /*COLOR VARIABLES START*/
 :root {
   --main-bg-color: #fff;
-  --usual-decorations: #fc021f;
+  --usual-decorations: #1e3c83;
   --main-text-color: #000;
-  --unusual-decor: #fc021f;
+  --unusual-decor: #1e3c83;
   --subcolor: rgba(255, 255, 255, 0.57);
   --section--title-text: #1b181f;
   --section-subtitles-color: rgba(242, 245, 247, 0.63);
@@ -150,7 +150,7 @@ html {
   text-decoration: none;
 }
 .main_button:hover {
-  background-color: #f20521ad;
+  background-color: #374d83;
   transition: all 0.5s;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.71);
@@ -184,7 +184,7 @@ h2 {
   border-radius: 33px;
   background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
-  color: rgba(252, 2, 31, 0.63);
+  color: #1e3c83;
   text-align: center;
   font-size: 16px;
   font-weight: 400;

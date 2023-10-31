@@ -4,7 +4,6 @@
   border-top: 1px solid #6c01f6;
   background: linear-gradient(180deg, #390181 0%, #0f0022 16.13%, #111 87.46%), #d9d9d9; */
   padding-top: 120px;
-  padding-bottom: 112px;
 }
 .background_wrapper {
   position: absolute;
@@ -128,7 +127,7 @@
 }
 
 .solutions_slider_title {
-  color: var(--main-text-color);
+  color: white;
   font-size: 28px;
   font-weight: 600;
   line-height: 110%;
@@ -136,7 +135,7 @@
   text-align: left;
 }
 .solutions_slider_text {
-  color: var(--main-text-color);
+  color: white;
   font-size: 18px;
   font-weight: 400;
   line-height: 120%;

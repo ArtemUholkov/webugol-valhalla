@@ -12,6 +12,12 @@
 .process_title_wrapper {
   padding-top: 120px;
 }
+.process_title {
+  color: black;
+}
+.process_text {
+  color: black;
+}
 .process_123_line {
   display: flex;
   justify-content: space-between;
@@ -119,7 +125,7 @@
     position: absolute;
     top: 7px;
     left: 18px;
-    color: var(--main-text-color);
+    color: white;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;

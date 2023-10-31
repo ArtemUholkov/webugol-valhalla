@@ -1,5 +1,5 @@
 .numbers {
-  background-color: var(--main-bg-color);
+  background: linear-gradient(179deg, #0292c6 -11.7%, var(--usual-decorations) 98.91%);
 
   padding-top: 120px;
   padding-bottom: 120px;

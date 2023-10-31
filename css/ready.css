@@ -12,7 +12,7 @@
   padding: 80px 60px;
   border-radius: 60px;
 
-  background: linear-gradient(179deg, var(--usual-decorations) -11.7%, #1b181f 98.91%);
+  background: linear-gradient(179deg, #0292c6 -11.7%, var(--usual-decorations) 98.91%);
 }
 .ready_title {
   text-align: center;
@@ -35,6 +35,11 @@
 .ready_button {
   max-width: 219px;
   margin: 0 auto;
+}
+.ready_arrow_icon {
+  transform: rotate(45deg);
+  height: 18px;
+  width: 18px;
 }
 @media (max-width: 1620px) {
   .ready_wrapper {
