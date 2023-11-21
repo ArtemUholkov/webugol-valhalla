@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <!--FONTS-->
     <!-- Slider-swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -82,201 +86,56 @@
       </div>
     </header>
     <section class="main_picture">
-      <div class="main_picture_content_wrapper" id="container">
-        <div class="main_stat_wrapper google_stat">
-          <img src="img/main/1.webp" alt="" class="main_stat_item" />
-        </div>
-        <div class="main_stat_wrapper email_stat">
-          <img src="img/main/4.webp" alt="" class="main_stat_item" />
-        </div>
-        <div class="main_stat_wrapper local_stat">
-          <img src="img/main/2.webp" alt="" class="main_stat_item" />
-        </div>
-
-        <div class="main_stat_wrapper seo_stat">
-          <img src="img/main/3.webp" alt="" class="main_stat_item" />
-        </div>
-        <div class="main_stat_wrapper facebook_stat">
-          <img src="img/main/5.webp" alt="" class="main_stat_item" />
-        </div>
-        <h1>Get free market analysis<br />before investing in<br />digital marketing!</h1>
-        <div class="swiper main_mob_swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div
-              class="swiper-slide main_mob_slide"
-              style="
-                background-color: var(--main-bg-color);
-                padding: 0;
-                height: auto;
-                min-height: 220px;
-              "
-            >
-              <img
-                src="img/main/1.webp"
-                alt=""
-                class="mob_slider_image"
-                style="max-width: 95%; height: auto; padding-left: 20px; padding-right: 20px"
-              />
-            </div>
-            <div
-              class="swiper-slide main_mob_slide"
-              style="
-                background-color: var(--main-bg-color);
-                padding: 0;
-                height: auto;
-                min-height: 220px;
-              "
-            >
-              <img
-                src="img/main/2.webp"
-                alt=""
-                class="mob_slider_image"
-                style="max-width: 95%; height: auto; padding-left: 20px; padding-right: 20px"
-              />
-            </div>
-            <div
-              class="swiper-slide main_mob_slide"
-              style="
-                background-color: var(--main-bg-color);
-                padding: 0;
-                height: auto;
-                min-height: 220px;
-              "
-            >
-              <img
-                src="img/main/3.webp"
-                alt=""
-                class="mob_slider_image"
-                style="max-width: 95%; height: auto; padding-left: 20px; padding-right: 20px"
-              />
-            </div>
-            <div
-              class="swiper-slide main_mob_slide"
-              style="
-                background-color: var(--main-bg-color);
-                padding: 0;
-                height: auto;
-                min-height: 220px;
-              "
-            >
-              <img
-                src="img/main/4.webp"
-                alt=""
-                class="mob_slider_image"
-                style="max-width: 95%; height: auto; padding-left: 20px; padding-right: 20px"
-              />
-            </div>
-            <div
-              class="swiper-slide main_mob_slide"
-              style="
-                background-color: var(--main-bg-color);
-                padding: 0;
-                height: auto;
-                min-height: 220px;
-              "
-            >
-              <img
-                src="img/main/5.webp"
-                alt=""
-                class="mob_slider_image"
-                style="max-width: 95%; height: auto; padding-left: 20px; padding-right: 20px"
-              />
+      <video autoplay muted loop id="video">
+        <source src="img/main/bgvideo.mp4" type="video/mp4" />
+      </video>
+      <div class="main_content_wrapper">
+        <div class="main_ask_wrapper">
+          <div class="main_ask_box">
+            <div class="main_ask_box_content_wrapper">
+              <p class="main_ask_box_question">
+                GET MARKET ANALYSIS BEFORE INVESTING IN DIGITAL MARKETING!
+              </p>
+              <a
+                href="#contacts"
+                class="main_button mob_button main_question"
+                onclick="scrollToSub()"
+                >Feel the difference
+                <img class="arrow_icon" src="img/global/icon_arrow.svg" alt="icon"
+              /></a>
             </div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
         </div>
-        <a href="#contacts" class="main_button mob_button main_mob_button" onclick="scrollToSub()"
-          >Get started <img class="arrow_icon" src="img/global/icon_arrow.svg" alt="icon"
-        /></a>
-        <div class="main_form_wrapper">
-          <div class="sub_form">
-            <form action="https://postmail.invotes.com/send" method="post" id="email_form">
-              <div class="input-container">
-                <input required type="text" name="Subject" />
-                <label>Name</label>
-              </div>
-              <div class="input-container">
-                <input required type="tel" name="extra_phone_number" />
-                <label>Company Name</label>
-              </div>
-              <div class="input-container">
-                <input required type="tel" name="extra_phone_number" />
-                <label>Phone number</label>
-              </div>
-              <div class="input-container">
-                <input required type="email" name="text" />
-                <label>Email</label>
-              </div>
-
-              <div class="input-container">
-                <input
-                  id="submit_form"
-                  type="submit"
-                  value="Begin Your Journey"
-                  class="main_button form_button main_form_button"
-                />
-              </div>
-              <input type="hidden" name="access_token" value="" />
-
-              <input
-                type="hidden"
-                name="success_url"
-                value=".?message=Email+Successfully+Sent%21&isError=0"
-              />
-              <input
-                type="hidden"
-                name="error_url"
-                value=".?message=Email+could+not+be+sent.&isError=1"
-              />
-            </form>
+        <div class="main_items_wrapper">
+          <div class="main_items_facebook">
+            <img src="img/main/fb3.png" alt="" class="main_items_image fst_img" />
+            <img src="img/main/fb2.png" alt="" class="main_items_image snd_img" />
+            <img src="img/main/fb1.png" alt="" class="main_items_image trd_img" />
           </div>
         </div>
       </div>
-      <div class="running-line righttoleft">
-        <div class="running-line_wrapper">
-          <p class="running-line_text">BOOST YOUR DIGITAL MARKETING</p>
-          <span class="running-line_circle"></span>
-          <p class="running-line_text">BOOST YOUR DIGITAL MARKETING</p>
-          <span class="running-line_circle"></span>
-          <p class="running-line_text">BOOST YOUR DIGITAL MARKETING</p>
-          <span class="running-line_circle"></span>
-          <p class="running-line_text">BOOST YOUR DIGITAL MARKETING</p>
-          <span class="running-line_circle"></span>
-          <p class="running-line_text">BOOST YOUR DIGITAL MARKETING</p>
-          <span class="running-line_circle"></span>
-          <p class="running-line_text">BOOST YOUR DIGITAL MARKETING</p>
-          <span class="running-line_circle"></span>
-          <p class="running-line_text">BOOST YOUR DIGITAL MARKETING</p>
-          <span class="running-line_circle"></span>
-          <p class="running-line_text">BOOST YOUR DIGITAL MARKETING</p>
-          <span class="running-line_circle"></span>
-        </div>
-        <div class="running-line_wrapper">
-          <p class="running-line_text">BOOST YOUR DIGITAL MARKETING</p>
-          <span class="running-line_circle"></span>
-          <p class="running-line_text">BOOST YOUR DIGITAL MARKETING</p>
-          <span class="running-line_circle"></span>
-          <p class="running-line_text">BOOST YOUR DIGITAL MARKETING</p>
-          <span class="running-line_circle"></span>
-          <p class="running-line_text">BOOST YOUR DIGITAL MARKETING</p>
-          <span class="running-line_circle"></span>
-          <p class="running-line_text">BOOST YOUR DIGITAL MARKETING</p>
-          <span class="running-line_circle"></span>
-          <p class="running-line_text">BOOST YOUR DIGITAL MARKETING</p>
-          <span class="running-line_circle"></span>
-          <p class="running-line_text">BOOST YOUR DIGITAL MARKETING</p>
-          <span class="running-line_circle"></span>
-          <p class="running-line_text">BOOST YOUR DIGITAL MARKETING</p>
-          <span class="running-line_circle"></span>
+      <div class="swiper mySwiperm">
+        <div class="swiper-wrapper main_swiper_wrapper">
+          <div class="swiper-slide main_slide">Facebook ads</div>
+          <div class="swiper-slide main_slide">SEO</div>
+          <div class="swiper-slide main_slide">Local SEO</div>
+          <div class="swiper-slide main_slide">Emailing</div>
+          <div class="swiper-slide main_slide">Google ads</div>
+          <div class="swiper-slide main_slide">Facebook ads</div>
+          <div class="swiper-slide main_slide">SEO</div>
+          <div class="swiper-slide main_slide">Local SEO</div>
+          <div class="swiper-slide main_slide">Emailing</div>
+          <div class="swiper-slide main_slide">Google ads</div>
+          <div class="swiper-slide main_slide">Facebook ads</div>
+          <div class="swiper-slide main_slide">SEO</div>
+          <div class="swiper-slide main_slide">Local SEO</div>
+          <div class="swiper-slide main_slide">Emailing</div>
+          <div class="swiper-slide main_slide">Google ads</div>
+          <div class="swiper-slide main_slide">Facebook ads</div>
+          <div class="swiper-slide main_slide">SEO</div>
+          <div class="swiper-slide main_slide">Local SEO</div>
+          <div class="swiper-slide main_slide">Emailing</div>
+          <div class="swiper-slide main_slide">Google ads</div>
         </div>
       </div>
     </section>
@@ -1030,16 +889,20 @@
     <!-- Swiper JS -->
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper('.main_mob_swiper', {
-        slidesPerView: 1,
-        autoplay: true,
+      var swiper = new Swiper('.mySwiperm', {
+        slidesPerView: 'auto',
+        slidesOffsetBefore: 370,
         loop: true,
-        spaceBetween: 40,
         autoplay: {
-          delay: 1500,
+          delay: 4000,
         },
+
+        slideToClickedSlide: true,
+        initialSlide: 1,
+        spaceBetween: 80,
       });
     </script>
+
     <script>
       var swiper = new Swiper('.mySwiper', {
         slidesOffsetAfter: 100,
