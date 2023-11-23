@@ -105,20 +105,101 @@
   justify-content: center;
 }
 .main_items_facebook {
+  visibility: hidden;
   position: relative;
   height: 100%;
   width: 100%;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.main_items_google {
+  visibility: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.main_items_em {
+  visibility: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.main_items_se {
+  visibility: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.main_items_ls {
+  visibility: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.images_block_appear {
+  visibility: visible;
+  opacity: 1;
 }
 .main_items_image {
   width: 350px;
   height: 236.979px;
   border-radius: 30px;
   background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
+.gg_image {
+  height: 200px;
+  width: 450px;
+}
+.se_img1,
+.se_img2,
+.se_img3 {
+  height: 220px;
+  width: 450px;
+}
 .fst_img {
+  position: absolute;
+  top: 35%;
+  left: 4%;
+  z-index: 10;
+  transition: 0.5s;
+}
+.snd_img {
+  position: absolute;
+  top: 15%;
+  left: 33%;
+  z-index: 9;
+  transition: 0.5s;
+}
+.trd_img {
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  z-index: 8;
+  transition: 0.5s;
+}
+
+.trd_move {
+  top: 47%;
+  transition: 0.5s;
+}
+.snd_move {
+  top: 18%;
+  transition: 0.5s;
+}
+.fst_move {
+  left: 7%;
+  transition: 0.5s;
+}
+/* .fst_img {
   position: absolute;
   top: 35%;
   left: 7%;
@@ -135,8 +216,7 @@
   top: 47%;
   left: 37%;
   z-index: 8;
-}
-
+} */
 .mySwiperm {
   height: 95px;
   position: absolute;
@@ -165,13 +245,14 @@ svg {
   font-weight: 700;
   line-height: 130%;
   text-transform: uppercase;
-  color: rgb(233, 233, 233);
+  color: #f4f8ff;
   text-shadow: 2px 2px 0 var(--usual-decorations), -2px -2px 0 var(--usual-decorations),
     2px -2px 0 var(--usual-decorations), -2px 2px 0 var(--usual-decorations),
     2px 2px 0 var(--usual-decorations);
   cursor: pointer;
-
+  white-space: nowrap;
   width: fit-content;
+  transition: all 0.3s;
 }
 .swiper-slide-active {
   color: var(--usual-decorations);
@@ -203,4 +284,8 @@ svg {
     height: 14px;
     width: 14px;
   }
+}
+.display_none {
+  display: none;
+  transition: all 0.3s;
 }

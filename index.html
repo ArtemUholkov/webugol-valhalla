@@ -107,35 +107,74 @@
           </div>
         </div>
         <div class="main_items_wrapper">
-          <div class="main_items_facebook">
+          <div class="main_items_facebook display_none">
             <img src="img/main/fb3.png" alt="" class="main_items_image fst_img" />
             <img src="img/main/fb2.png" alt="" class="main_items_image snd_img" />
             <img src="img/main/fb1.png" alt="" class="main_items_image trd_img" />
+          </div>
+          <div class="main_items_google images_block_appear">
+            <img
+              src="img/main/gg1.png"
+              alt=""
+              class="main_items_image gg_image fst_img ggfst_img"
+            />
+            <img
+              src="img/main/gg2.png"
+              alt=""
+              class="main_items_image gg_image snd_img ggsnd_img"
+            />
+            <img
+              src="img/main/gg3.png"
+              alt=""
+              class="main_items_image gg_image trd_img ggtrd_img"
+            />
+          </div>
+          <div class="main_items_em display_none">
+            <img src="img/main/em1.png" alt="" class="main_items_image fst_img em_img1" />
+            <img src="img/main/em2.png" alt="" class="main_items_image snd_img em_img2" />
+            <img src="img/main/em3.png" alt="" class="main_items_image trd_img em_img3" />
+          </div>
+          <div class="main_items_ls display_none">
+            <img
+              src="img/main/ls1.png"
+              alt=""
+              class="main_items_image gg_image fst_img lsfst_img"
+            />
+            <img
+              src="img/main/ls2.png"
+              alt=""
+              class="main_items_image gg_image snd_img lssnd_img"
+            />
+            <img
+              src="img/main/ls3.png"
+              alt=""
+              class="main_items_image gg_image trd_img lstrd_img"
+            />
+          </div>
+          <div class="main_items_se display_none">
+            <img src="img/main/se1.png" alt="" class="main_items_image fst_img se_img1" />
+            <img src="img/main/se2.png" alt="" class="main_items_image snd_img se_img2" />
+            <img src="img/main/se3.png" alt="" class="main_items_image trd_img se_img3" />
           </div>
         </div>
       </div>
       <div class="swiper mySwiperm">
         <div class="swiper-wrapper main_swiper_wrapper">
-          <div class="swiper-slide main_slide">Facebook ads</div>
-          <div class="swiper-slide main_slide">SEO</div>
-          <div class="swiper-slide main_slide">Local SEO</div>
-          <div class="swiper-slide main_slide">Emailing</div>
-          <div class="swiper-slide main_slide">Google ads</div>
-          <div class="swiper-slide main_slide">Facebook ads</div>
-          <div class="swiper-slide main_slide">SEO</div>
-          <div class="swiper-slide main_slide">Local SEO</div>
-          <div class="swiper-slide main_slide">Emailing</div>
-          <div class="swiper-slide main_slide">Google ads</div>
-          <div class="swiper-slide main_slide">Facebook ads</div>
-          <div class="swiper-slide main_slide">SEO</div>
-          <div class="swiper-slide main_slide">Local SEO</div>
-          <div class="swiper-slide main_slide">Emailing</div>
-          <div class="swiper-slide main_slide">Google ads</div>
-          <div class="swiper-slide main_slide">Facebook ads</div>
-          <div class="swiper-slide main_slide">SEO</div>
-          <div class="swiper-slide main_slide">Local SEO</div>
-          <div class="swiper-slide main_slide">Emailing</div>
-          <div class="swiper-slide main_slide">Google ads</div>
+          <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
+          <div class="swiper-slide main_slide" id="se">SEO</div>
+          <div class="swiper-slide main_slide" id="ls">Local SEO</div>
+          <div class="swiper-slide main_slide" id="em">Emailing</div>
+          <div class="swiper-slide main_slide" id="gg">Google ads</div>
+          <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
+          <div class="swiper-slide main_slide" id="se">SEO</div>
+          <div class="swiper-slide main_slide" id="ls">Local SEO</div>
+          <div class="swiper-slide main_slide" id="em">Emailing</div>
+          <div class="swiper-slide main_slide" id="gg">Google ads</div>
+          <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
+          <div class="swiper-slide main_slide" id="se">SEO</div>
+          <div class="swiper-slide main_slide" id="ls">Local SEO</div>
+          <div class="swiper-slide main_slide" id="em">Emailing</div>
+          <div class="swiper-slide main_slide" id="gg">Google ads</div>
         </div>
       </div>
     </section>
@@ -890,16 +929,160 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper('.mySwiperm', {
-        slidesPerView: 'auto',
-        slidesOffsetBefore: 370,
+        slidesPerView: 4,
+        centeredSlides: true,
         loop: true,
         autoplay: {
           delay: 4000,
         },
 
         slideToClickedSlide: true,
-        initialSlide: 1,
-        spaceBetween: 80,
+        initialSlide: 4,
+        slidesOffsetAfter: 150,
+      });
+      const picturesWrapper = document.querySelector('.main_items_wrapper');
+
+      const fbslides = document.querySelectorAll('#fb');
+      const fbitems = document.querySelector('.main_items_facebook');
+
+      const ggslides = document.querySelectorAll('#gg');
+      const ggitems = document.querySelector('.main_items_google');
+
+      const emslides = document.querySelectorAll('#em');
+      const emitems = document.querySelector('.main_items_em');
+
+      const lsslides = document.querySelectorAll('#ls');
+      const lsitems = document.querySelector('.main_items_ls');
+
+      const seslides = document.querySelectorAll('#se');
+      const seitems = document.querySelector('.main_items_se');
+
+      const fbthirdImg = document.querySelector('.trd_img');
+      const fbsecondImg = document.querySelector('.snd_img');
+      const fbfirstImg = document.querySelector('.fst_img');
+
+      const ggthirdImg = document.querySelector('.ggtrd_img');
+      const ggsecondImg = document.querySelector('.ggsnd_img');
+      const ggfirstImg = document.querySelector('.ggfst_img');
+
+      const emthirdImg = document.querySelector('.em_img3');
+      const emsecondImg = document.querySelector('.em_img2');
+      const emfirstImg = document.querySelector('.em_img1');
+
+      const lsthirdImg = document.querySelector('.lstrd_img');
+      const lssecondImg = document.querySelector('.lssnd_img');
+      const lsfirstImg = document.querySelector('.lsfst_img');
+
+      const sethirdImg = document.querySelector('.se_img3');
+      const sesecondImg = document.querySelector('.se_img2');
+      const sefirstImg = document.querySelector('.se_img1');
+
+      swiper.on('slideChangeTransitionStart', () => {
+        for (let i = 0; i < fbslides.length; i++) {
+          if (fbslides[i].classList.contains('swiper-slide-active')) {
+            fbitems.classList.remove('display_none');
+            setTimeout(() => {
+              fbitems.classList.add('images_block_appear');
+              fbthirdImg.classList.add('trd_move');
+              fbsecondImg.classList.add('snd_move');
+              fbfirstImg.classList.add('fst_move');
+              swiper.update();
+            }, 1);
+            break;
+          } else {
+            fbitems.classList.remove('images_block_appear');
+            fbthirdImg.classList.remove('trd_move');
+            fbsecondImg.classList.remove('snd_move');
+            fbfirstImg.classList.remove('fst_move');
+
+            fbitems.classList.add('display_none');
+            swiper.update();
+          }
+        }
+        for (let i = 0; i < ggslides.length; i++) {
+          if (ggslides[i].classList.contains('swiper-slide-active')) {
+            ggitems.classList.remove('display_none');
+            setTimeout(() => {
+              ggitems.classList.add('images_block_appear');
+              ggthirdImg.classList.add('trd_move');
+              ggsecondImg.classList.add('snd_move');
+              ggfirstImg.classList.add('fst_move');
+              swiper.update();
+            }, 10);
+            break;
+          } else {
+            ggitems.classList.remove('images_block_appear');
+            ggthirdImg.classList.remove('trd_move');
+            ggsecondImg.classList.remove('snd_move');
+            ggfirstImg.classList.remove('fst_move');
+
+            ggitems.classList.add('display_none');
+            swiper.update();
+          }
+        }
+        for (let i = 0; i < emslides.length; i++) {
+          if (emslides[i].classList.contains('swiper-slide-active')) {
+            emitems.classList.remove('display_none');
+            setTimeout(() => {
+              emitems.classList.add('images_block_appear');
+              emthirdImg.classList.add('trd_move');
+              emsecondImg.classList.add('snd_move');
+              emfirstImg.classList.add('fst_move');
+              swiper.update();
+            }, 10);
+            break;
+          } else {
+            emitems.classList.remove('images_block_appear');
+            emthirdImg.classList.remove('trd_move');
+            emsecondImg.classList.remove('snd_move');
+            emfirstImg.classList.remove('fst_move');
+
+            emitems.classList.add('display_none');
+            swiper.update();
+          }
+        }
+        for (let i = 0; i < lsslides.length; i++) {
+          if (lsslides[i].classList.contains('swiper-slide-active')) {
+            lsitems.classList.remove('display_none');
+            setTimeout(() => {
+              lsitems.classList.add('images_block_appear');
+              lsthirdImg.classList.add('trd_move');
+              lssecondImg.classList.add('snd_move');
+              lsfirstImg.classList.add('fst_move');
+              swiper.update();
+            }, 10);
+            break;
+          } else {
+            lsitems.classList.remove('images_block_appear');
+            lsthirdImg.classList.remove('trd_move');
+            lssecondImg.classList.remove('snd_move');
+            lsfirstImg.classList.remove('fst_move');
+
+            lsitems.classList.add('display_none');
+            swiper.update();
+          }
+        }
+        for (let i = 0; i < seslides.length; i++) {
+          if (seslides[i].classList.contains('swiper-slide-active')) {
+            seitems.classList.remove('display_none');
+            setTimeout(() => {
+              seitems.classList.add('images_block_appear');
+              sethirdImg.classList.add('trd_move');
+              sesecondImg.classList.add('snd_move');
+              sefirstImg.classList.add('fst_move');
+              swiper.update();
+            }, 10);
+            break;
+          } else {
+            seitems.classList.remove('images_block_appear');
+            sethirdImg.classList.remove('trd_move');
+            sesecondImg.classList.remove('snd_move');
+            sefirstImg.classList.remove('fst_move');
+
+            seitems.classList.add('display_none');
+            swiper.update();
+          }
+        }
       });
     </script>
 
