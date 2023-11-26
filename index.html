@@ -939,7 +939,10 @@
         slideToClickedSlide: true,
         initialSlide: 4,
         slidesOffsetAfter: 150,
-        freeMode: true,
+        freeMode: {
+          enabled: true,
+          sticky: true,
+        },
       });
       const picturesWrapper = document.querySelector('.main_items_wrapper');
 
