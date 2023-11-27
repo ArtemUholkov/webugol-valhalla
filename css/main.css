@@ -428,6 +428,9 @@ svg {
     height: 220px;
     width: 450px;
   }
+  .main_slide {
+    font-size: 30px;
+  }
 }
 @media (max-width: 780px) {
   .main_items_image {
