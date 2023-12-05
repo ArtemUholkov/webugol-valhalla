@@ -40,11 +40,11 @@
           </a>
 
           <ul class="navbar_menu">
-            <li><p class="nav_elem" href="" onclick="scrollToNumbers()">Projects</p></li>
-            <li><p class="nav_elem" href="#" onclick="scrollToSolutions()">Solutions</p></li>
-            <li><p class="nav_elem" href="#" onclick="scrollToProcess()">Process</p></li>
-            <li><p class="nav_elem" href="#" onclick="scrollToReviews()">Clients reviews</p></li>
-            <li><p class="nav_elem" href="#" onclick="scrollToTeam()">Team</p></li>
+            <li><p class="nav_elem" onclick="scrollToNumbers()">Projects</p></li>
+            <li><p class="nav_elem" onclick="scrollToSolutions()">Solutions</p></li>
+            <li><p class="nav_elem" onclick="scrollToProcess()">Process</p></li>
+            <li><p class="nav_elem" onclick="scrollToReviews()">Clients reviews</p></li>
+            <li><p class="nav_elem" onclick="scrollToTeam()">Team</p></li>
           </ul>
           <div class="header_button_pair">
             <a href="#contacts" class="main_button" onclick="scrollToSub()"
@@ -62,18 +62,18 @@
         <div class="popup" id="popup">
           <div class="popup_textblock" id="popupSlide">
             <ul class="navbar_menu_mobile">
-              <li><p class="nav_elem_mobile" href="" onclick="scrollToNumbers()">Projects</p></li>
+              <li><p class="nav_elem_mobile" onclick="scrollToNumbers()">Projects</p></li>
               <li>
-                <p class="nav_elem_mobile" href="" onclick="scrollToSolutions()">Solutions</p>
+                <p class="nav_elem_mobile" onclick="scrollToSolutions()">Solutions</p>
               </li>
               <li>
-                <p class="nav_elem_mobile" href="" onclick="scrollToProcess()">Process</p>
+                <p class="nav_elem_mobile" onclick="scrollToProcess()">Process</p>
               </li>
               <li>
-                <p class="nav_elem_mobile" href="" onclick="scrollToReviews()">Clients reviews</p>
+                <p class="nav_elem_mobile" onclick="scrollToReviews()">Clients reviews</p>
               </li>
               <li>
-                <p class="nav_elem_mobile" href="" onclick="scrollToTeam()">Team</p>
+                <p class="nav_elem_mobile" onclick="scrollToTeam()">Team</p>
               </li>
             </ul>
             <div class="header_button_pair mob_menu_buttons">
@@ -108,70 +108,72 @@
         </div>
         <div class="main_items_wrapper">
           <div class="main_items_facebook display_none">
-            <img src="img/main/fb3.png" alt="" class="main_items_image fst_img" />
-            <img src="img/main/fb2.png" alt="" class="main_items_image snd_img" />
-            <img src="img/main/fb1.png" alt="" class="main_items_image trd_img" />
+            <img src="img/main/fb3.png" alt="fb" class="main_items_image fst_img" />
+            <img src="img/main/fb2.png" alt="fb" class="main_items_image snd_img" />
+            <img src="img/main/fb1.png" alt="fb" class="main_items_image trd_img" />
           </div>
           <div class="main_items_google images_block_appear">
             <img
               src="img/main/gg1.png"
-              alt=""
+              alt="google"
               class="main_items_image gg_image fst_img ggfst_img"
             />
             <img
               src="img/main/gg2.png"
-              alt=""
+              alt="google"
               class="main_items_image gg_image snd_img ggsnd_img"
             />
             <img
               src="img/main/gg3.png"
-              alt=""
+              alt="google"
               class="main_items_image gg_image trd_img ggtrd_img"
             />
           </div>
           <div class="main_items_em display_none">
-            <img src="img/main/em1.png" alt="" class="main_items_image fst_img em_img1" />
-            <img src="img/main/em2.png" alt="" class="main_items_image snd_img em_img2" />
-            <img src="img/main/em3.png" alt="" class="main_items_image trd_img em_img3" />
+            <img src="img/main/em1.png" alt="emailing" class="main_items_image fst_img em_img1" />
+            <img src="img/main/em2.png" alt="emailing" class="main_items_image snd_img em_img2" />
+            <img src="img/main/em3.png" alt="emailing" class="main_items_image trd_img em_img3" />
           </div>
           <div class="main_items_ls display_none">
             <img
               src="img/main/ls1.png"
-              alt=""
+              alt="local seo"
               class="main_items_image gg_image fst_img lsfst_img"
             />
             <img
               src="img/main/ls2.png"
-              alt=""
+              alt="local seo"
               class="main_items_image gg_image snd_img lssnd_img"
             />
             <img
               src="img/main/ls3.png"
-              alt=""
+              alt="local seo"
               class="main_items_image gg_image trd_img lstrd_img"
             />
           </div>
           <div class="main_items_se display_none">
-            <img src="img/main/se1.png" alt="" class="main_items_image fst_img se_img1" />
-            <img src="img/main/se2.png" alt="" class="main_items_image snd_img se_img2" />
-            <img src="img/main/se3.png" alt="" class="main_items_image trd_img se_img3" />
+            <img src="img/main/se1.png" alt="seo" class="main_items_image fst_img se_img1" />
+            <img src="img/main/se2.png" alt="seo" class="main_items_image snd_img se_img2" />
+            <img src="img/main/se3.png" alt="seo" class="main_items_image trd_img se_img3" />
           </div>
         </div>
       </div>
       <div class="swiper mySwiperm">
         <div class="swiper-wrapper main_swiper_wrapper">
-          <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
           <div class="swiper-slide main_slide" id="se">SEO</div>
+          <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
           <div class="swiper-slide main_slide" id="ls">Local SEO</div>
           <div class="swiper-slide main_slide" id="em">Emailing</div>
           <div class="swiper-slide main_slide" id="gg">Google ads</div>
-          <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
+
           <div class="swiper-slide main_slide" id="se">SEO</div>
+          <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
           <div class="swiper-slide main_slide" id="ls">Local SEO</div>
           <div class="swiper-slide main_slide" id="em">Emailing</div>
           <div class="swiper-slide main_slide" id="gg">Google ads</div>
-          <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
+
           <div class="swiper-slide main_slide" id="se">SEO</div>
+          <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
           <div class="swiper-slide main_slide" id="ls">Local SEO</div>
           <div class="swiper-slide main_slide" id="em">Emailing</div>
           <div class="swiper-slide main_slide" id="gg">Google ads</div>
@@ -182,57 +184,60 @@
       <div class="mob_main_wrapper">
         <div class="main_items_wrapper mob_items_wrapper">
           <div class="main_items_facebook display_none">
-            <img src="img/main/fb3.png" alt="" class="main_items_image fst_img" />
-            <img src="img/main/fb2.png" alt="" class="main_items_image snd_img" />
+            <img src="img/main/fb3.png" alt="fb" class="main_items_image fst_img" />
+            <img src="img/main/fb2.png" alt="fb" class="main_items_image snd_img" />
           </div>
           <div class="main_items_google images_block_appear">
             <img
               src="img/main/gg1.png"
-              alt=""
+              alt="gg"
               class="main_items_image gg_image fst_img ggfst_img"
             />
             <img
               src="img/main/gg2.png"
-              alt=""
+              alt="gg"
               class="main_items_image gg_image snd_img ggsnd_img"
             />
           </div>
           <div class="main_items_em display_none">
-            <img src="img/main/em1.png" alt="" class="main_items_image fst_img em_img1" />
-            <img src="img/main/em2.png" alt="" class="main_items_image snd_img em_img2" />
+            <img src="img/main/em1.png" alt="em" class="main_items_image fst_img em_img1" />
+            <img src="img/main/em2.png" alt="em" class="main_items_image snd_img em_img2" />
           </div>
           <div class="main_items_ls display_none">
             <img
               src="img/main/ls1.png"
-              alt=""
+              alt="local"
               class="main_items_image gg_image fst_img lsfst_img"
             />
             <img
               src="img/main/ls2.png"
-              alt=""
+              alt="local"
               class="main_items_image gg_image snd_img lssnd_img"
             />
           </div>
           <div class="main_items_se display_none">
-            <img src="img/main/se1.png" alt="" class="main_items_image fst_img se_img1" />
-            <img src="img/main/se2.png" alt="" class="main_items_image snd_img se_img2" />
+            <img src="img/main/se1.png" alt="se" class="main_items_image fst_img se_img1" />
+            <img src="img/main/se2.png" alt="se" class="main_items_image snd_img se_img2" />
           </div>
         </div>
 
         <div class="swiper mySwipermob">
           <div class="swiper-wrapper main_swiper_wrapper">
-            <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
             <div class="swiper-slide main_slide" id="se">SEO</div>
+            <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
             <div class="swiper-slide main_slide" id="ls">Local SEO</div>
             <div class="swiper-slide main_slide" id="em">Emailing</div>
             <div class="swiper-slide main_slide" id="gg">Google ads</div>
-            <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
+
             <div class="swiper-slide main_slide" id="se">SEO</div>
+            <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
             <div class="swiper-slide main_slide" id="ls">Local SEO</div>
             <div class="swiper-slide main_slide" id="em">Emailing</div>
             <div class="swiper-slide main_slide" id="gg">Google ads</div>
-            <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
+
             <div class="swiper-slide main_slide" id="se">SEO</div>
+            <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
+
             <div class="swiper-slide main_slide" id="ls">Local SEO</div>
             <div class="swiper-slide main_slide" id="em">Emailing</div>
             <div class="swiper-slide main_slide" id="gg">Google ads</div>
@@ -385,7 +390,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide first_slide">
             <div class="slide_content_wrapper">
-              <img src="img/solutions/google.svg" alt="" class="solutions_slider_icon" />
+              <img src="img/solutions/google.svg" alt="google" class="solutions_slider_icon" />
               <div class="solutions_slider_text_wrapper">
                 <p class="solutions_slider_title">Google Ads</p>
                 <p class="solutions_slider_text">
@@ -567,7 +572,7 @@
         /></a>
       </div>
     </section>
-    <section class="reviews" id="reviews">
+    <!-- <section class="reviews" id="reviews">
       <div class="section_title_wrapper reviews_title_wrapper" data-aos="zoom-in">
         <h2 class="section_ti">Clients reviews</h2>
       </div>
@@ -579,9 +584,7 @@
           <div class="swiper-slide reviews_swiper_slide first_slide">
             <div class="reviews_image_wrapper" data-toggle="modal" data-target="#exampleModal3">
               <img src="img/reviews/Philip.webp" alt="third review" class="reviews_video_image" />
-              <!-- <div class="playbutton_wrapper">
-                <img src="img/reviews/play.png" alt="play button" class="play_button" />
-              </div> -->
+            
             </div>
             <div class="reviews_content_wrapper">
               <p class="reviews_content_title">
@@ -601,13 +604,7 @@
                 data-target="#exampleModal"
               />
               <div class="playbutton_wrapper">
-                <!-- <img
-                  src="img/reviews/play.png"
-                  alt="play button"
-                  class="play_button"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
-                /> -->
+              
               </div>
             </div>
             <div class="reviews_content_wrapper">
@@ -622,9 +619,7 @@
           <div class="swiper-slide reviews_swiper_slide first_slide">
             <div class="reviews_image_wrapper" data-toggle="modal" data-target="#exampleModal2">
               <img src="img/reviews/Patrick.webp" alt="second review" class="reviews_video_image" />
-              <!-- <div class="playbutton_wrapper">
-                <img src="img/reviews/play.png" alt="play button" class="play_button" />
-              </div> -->
+              
             </div>
             <div class="reviews_content_wrapper">
               <p class="reviews_content_title">
@@ -638,9 +633,7 @@
           <div class="swiper-slide reviews_swiper_slide first_slide">
             <div class="reviews_image_wrapper" data-toggle="modal" data-target="#exampleModa4">
               <img src="img/reviews/Tim.webp" alt="fourth review" class="reviews_video_image" />
-              <!-- <div class="playbutton_wrapper">
-                <img src="img/reviews/play.png" alt="play button" class="play_button" />
-              </div> -->
+              
             </div>
             <div class="reviews_content_wrapper">
               <p class="reviews_content_title">
@@ -650,7 +643,7 @@
               <p class="reviews_content_position">Chief Executive Officer at Eves & Gray London</p>
             </div>
           </div>
-          <!-- <div class="swiper-slide last_slide">Slide 9</div> -->
+          
         </div>
       </div>
       <div class="buttons_wrapper">
@@ -661,62 +654,8 @@
           <img src="img/sliders_buttons/right_white.png" alt="arrow" />
         </div>
       </div>
-      <!-- <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content" id="yt-player">
-            <iframe class="modal_video" src="https://www.youtube.com/embed/m_zMcypLEnU"> </iframe>
-          </div>
-        </div>
-      </div>
-      <div
-        class="modal fade"
-        id="exampleModal2"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content" id="yt-player">
-            <iframe class="modal_video" src="https://www.youtube.com/embed/vGC-rD3hKvA"> </iframe>
-          </div>
-        </div>
-      </div>
-      <div
-        class="modal fade"
-        id="exampleModal3"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content" id="yt-player">
-            <iframe class="modal_video" src="https://www.youtube.com/embed/QIoG5FCnR4k"> </iframe>
-          </div>
-        </div>
-      </div>
-      <div
-        class="modal fade"
-        id="exampleModa4"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content" id="yt-player">
-            <iframe class="modal_video" src="https://www.youtube.com/embed/0TJXIvxr04Y"> </iframe>
-          </div>
-        </div></div> -->
-    </section>
+      
+    </section> -->
     <section class="ready">
       <div class="ready_wrapper">
         <div class="ready_content_wrapper" data-aos="zoom-in" data-aos-duration="1000">
@@ -738,7 +677,10 @@
         </div>
       </div>
     </section>
-    <section class="team">
+    <div class="deco_line_wrapper">
+      <span class="sub_deco_line" data-aos="fade-up"></span>
+    </div>
+    <!-- <section class="team">
       <div
         class="section_title_wrapper team_title_wrapper reviews_title_wrapper"
         data-aos="zoom-in"
@@ -814,7 +756,7 @@
             </div>
           </div>
 
-          <!-- <div class="swiper-slide last_slide">Slide 9</div> -->
+        
         </div>
       </div>
       <div class="buttons_wrapper">
@@ -825,7 +767,7 @@
           <img src="img/sliders_buttons/right_white.png" alt="arrow" />
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="sub" id="sub">
       <div class="sub_wrapper">
         <div class="sub_content" data-aos="fade-up">
@@ -833,12 +775,14 @@
         </div>
         <div class="sub_form bot_form">
           <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+            <input required type="hidden" name="Subject" value="New customer from website" />
+            <input required type="hidden" name="text" value="Form data:" />
             <div class="input-container">
-              <input required type="text" name="Subject" />
+              <input required type="text" name="extra_name" />
               <label>Name</label>
             </div>
             <div class="input-container">
-              <input required type="tel" name="extra_phone_number" />
+              <input required type="text" name="extra_company_name" />
               <label>Company Name</label>
             </div>
             <div class="input-container">
@@ -846,7 +790,7 @@
               <label>Phone number</label>
             </div>
             <div class="input-container">
-              <input required type="email" name="text" />
+              <input required type="email" name="extra_email" />
               <label>Email</label>
             </div>
 
@@ -858,13 +802,9 @@
                 class="main_button form_button main_form_button mob_button"
               />
             </div>
-            <input type="hidden" name="access_token" value="" />
+            <input type="hidden" name="access_token" value="b6ptufawi5qmc6uw1hqngyoz" />
 
-            <input
-              type="hidden"
-              name="success_url"
-              value=".?message=Email+Successfully+Sent%21&isError=0"
-            />
+            <input type="hidden" name="success_url" value=".thankyou.html" />
             <input
               type="hidden"
               name="error_url"
@@ -1386,7 +1326,7 @@
         },
       });
     </script>
-    <script>
+    <!-- <script>
       var swiper = new Swiper('.mySwiper1', {
         slidesOffsetAfter: 100,
         slidesOffsetBefore: 150,
@@ -1430,8 +1370,8 @@
           },
         },
       });
-    </script>
-    <script>
+    </script> -->
+    <!-- <script>
       var swiper = new Swiper('.mySwiper3', {
         // slidesOffsetAfter: 0,
         // slidesOffsetBefore: 0,
@@ -1491,19 +1431,7 @@
           },
         },
       });
-    </script>
+    </script> -->
     <!-- Initialize Swiper -->
   </body>
-  <script>
-    $(document).ready(function () {
-      $('.modal').each(function () {
-        var src = $(this).find('iframe').attr('src');
-
-        $(this).on('click', function () {
-          $(this).find('iframe').attr('src', '');
-          $(this).find('iframe').attr('src', src);
-        });
-      });
-    });
-  </script>
 </html>

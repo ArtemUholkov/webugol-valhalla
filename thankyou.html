@@ -37,20 +37,22 @@
       </div>
     </header>
     <section class="main_picture">
+      <video autoplay muted loop id="video">
+        <source src="img/main/bgvideo.mp4" type="video/mp4" />
+      </video>
       <div class="main_picture_content_wrapper" id="container">
-        <h1 data-aos="fade-in" data-aos-duration="1000">
+        <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
           Thank you!<br />
           We will contact you soon!
         </h1>
-        <a
-          href="index.html"
-          class="main_button mob_button main_picture_button"
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          data-aos-delay="500"
-          onclick="scrollToSub()"
-          >Back to main page</a
-        >
+        <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+          <a
+            href="index.html"
+            class="main_button mob_button main_picture_button"
+            onclick="scrollToSub()"
+            >Back to main page</a
+          >
+        </div>
       </div>
     </section>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
