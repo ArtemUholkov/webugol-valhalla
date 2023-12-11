@@ -256,12 +256,13 @@ svg {
 }
 .swiper-slide-active {
   color: var(--usual-decorations);
-  text-shadow: none;
+  text-shadow: 2px 2px 0 #f4f8ff, -2px -2px 0 #f4f8ff, 2px -2px 0 #f4f8ff, -2px 2px 0 #f4f8ff,
+    2px 2px 0 #f4f8ff;
 }
 .mob_main {
   display: none;
   background-color: #ffffff;
-  height: 500px;
+  height: 550px;
 }
 .mob_main_wrapper {
   padding: 20px;
@@ -405,6 +406,21 @@ svg {
   .main_picture {
     height: 541px;
   }
+  .wrap_detectors {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .wrap_3 {
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+  }
+  .wrap_2 {
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+  }
   .main_ask_box_content_wrapper {
     height: auto;
     gap: 100px;
@@ -428,8 +444,40 @@ svg {
     height: 220px;
     width: 450px;
   }
-  .main_slide {
-    font-size: 30px;
+  .text_detecrot {
+    width: auto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 5.1px 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(25px);
+    padding: 10px;
+    white-space: nowrap;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .text_detecrot:hover {
+    border-radius: 5px;
+    background: rgba(225, 225, 225, 0.5);
+    box-shadow: 0px 0px 5.1px 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(25px);
+    transition: all 0.3s;
+  }
+  .superactive {
+    background: #1e3c83;
+    color: #fff;
+    transition: 0.3s all;
+  }
+  .superactive:hover {
+    background: #1e3c83;
+    color: #fff;
+    transition: 0.3s all;
+  }
+  video {
+    display: none;
   }
 }
 @media (max-width: 780px) {
@@ -449,12 +497,12 @@ svg {
   }
 
   .fst_img {
-    top: 45%;
+    top: 56%;
     left: 7%;
   }
   .snd_img {
-    top: 15%;
-    left: 23%;
+    top: 19%;
+    left: 43%;
   }
 
   .fst_move {
@@ -462,6 +510,16 @@ svg {
   }
   .snd_move {
     left: 27%;
+  }
+}
+@media (max-width: 558px) {
+  .fst_img {
+    top: 56%;
+    left: 7%;
+  }
+  .snd_img {
+    top: 19%;
+    left: 23%;
   }
 }
 @media (max-width: 400px) {
@@ -472,18 +530,18 @@ svg {
     padding: 0;
   }
   .fst_img {
-    top: 45%;
+    top: 60%;
     left: 0%;
   }
   .snd_img {
     top: 15%;
-    left: 13%;
+    left: 14%;
   }
 
   .fst_move {
-    top: 49%;
+    top: 60%;
   }
   .snd_move {
-    left: 16%;
+    left: 20%;
   }
 }

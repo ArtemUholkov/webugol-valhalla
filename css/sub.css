@@ -1,8 +1,7 @@
 .sub {
   width: 100%;
 
-  margin-top: 100px;
-  min-height: 516px;
+  height: auto;
   padding: 100px 150px;
   position: relative;
 }
@@ -61,7 +60,7 @@
 }
 @media (max-width: 1000px) {
   .sub {
-    margin-top: 60px;
+    margin-top: 0px;
   }
 }
 @media (max-width: 900px) {

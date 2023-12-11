@@ -1,6 +1,4 @@
 .numbers {
-  background: linear-gradient(179deg, #0292c6 -11.7%, var(--usual-decorations) 98.91%);
-
   padding-top: 120px;
   padding-bottom: 120px;
   overflow: hidden;
@@ -12,7 +10,7 @@
 }
 .numbers_text {
   max-width: 1153px;
-  color: white;
+  color: var(--usual-decorations);
   font-size: 40px;
   font-weight: 600;
   line-height: 140%;

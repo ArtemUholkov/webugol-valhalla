@@ -148,6 +148,9 @@
 .disabled_swiper_button img {
   opacity: 0.8;
 }
+.roi_slide .swiper-slide-active {
+  text-shadow: none;
+}
 @media (max-width: 1000px) {
   .solutions {
     padding-top: 60px;

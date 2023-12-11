@@ -75,55 +75,213 @@ let copiedText = document.querySelectorAll('#trythis');
 copiedText.forEach((elem) => elem.addEventListener('click', () => copyText(elem)));
 console.log(colorLogo);
 
-const slider = document.querySelector('.mySwiperm');
-// const sliderSlides = document.querySelectorAll('.main_slide');
-// console.log(slider);
+const picturesWrapper = document.querySelector('.mob_items_wrapper');
 
-// slider.addEventListener('click', (e) => {
-//   console.log(e.target);
-//   if (e.target.classList.contains('main_slide')) {
-//     sliderSlides.forEach((item) => {
-//       item.classList.remove('swiper-slide-active');
-//     });
+const fbslides = document.querySelectorAll('#fb');
+const fbitems = document.querySelector('.mob_fb');
 
-//     e.target.classList.add('swiper-slide-active');
-//   }
-//   slider.update();
-// });
-// const fbslides = document.querySelectorAll('#fb');
-// const fbitems = document.querySelector('.main_items_facebook');
-// const picturesWrapper = document.querySelector('.main_items_wrapper');
+const ggslides = document.querySelectorAll('#gg');
+const ggitems = document.querySelector('.mob_gg');
 
-// var swiper = new Swiper('.mySwiperm', {
-//   slidesPerView: 'auto',
-//   slidesOffsetBefore: 370,
-//   loop: true,
-//   autoplay: {
-//     delay: 4000,
-//   },
+const emslides = document.querySelectorAll('#em');
+const emitems = document.querySelector('.mob_em');
 
-//   slideToClickedSlide: true,
-//   initialSlide: 1,
-//   spaceBetween: 80,
-// });
+const lsslides = document.querySelectorAll('#ls');
+const lsitems = document.querySelector('.mob_ls');
 
-// const thirdImg = document.querySelector('.trd_img');
-// const secondImg = document.querySelector('.snd_img');
-// const firstImg = document.querySelector('.fst_img');
+const seslides = document.querySelectorAll('#se');
+const seitems = document.querySelector('.mob_se');
 
-// swiper.on('activeIndexChange', () => {
-//   for (let i = 0; i < fbslides.length; i++) {
-//     if (fbslides[i].classList.contains('swiper-slide-active')) {
-//       fbitems.classList.add('images_block_appear');
-//       thirdImg.classList.add('trd_move');
-//       secondImg.classList.add('snd_move');
-//       firstImg.classList.add('fst_move');
-//       break;
-//     } else {
-//       fbitems.classList.remove('images_block_appear');
-//       thirdImg.classList.remove('trd_move');
-//       secondImg.classList.remove('snd_move');
-//       firstImg.classList.remove('fst_move');
-//     }
-//   }
-// });
+const fbsecondImg = document.querySelector('.snd_img');
+const fbfirstImg = document.querySelector('.fst_img');
+
+const ggsecondImg = document.querySelector('.ggsnd_img');
+const ggfirstImg = document.querySelector('.ggfst_img');
+
+const emsecondImg = document.querySelector('.em_img2');
+const emfirstImg = document.querySelector('.em_img1');
+
+const lssecondImg = document.querySelector('.lssnd_img');
+const lsfirstImg = document.querySelector('.lsfst_img');
+
+const sesecondImg = document.querySelector('.se_img2');
+const sefirstImg = document.querySelector('.se_img1');
+
+const seoBut = document.querySelector('.seo_but');
+const fbBut = document.querySelector('.fb_but');
+const lsBut = document.querySelector('.ls_but');
+const ggBut = document.querySelector('.gg_but');
+const emBut = document.querySelector('.em_but');
+
+seoBut.addEventListener('click', () => {
+  seoBut.classList.add('superactive');
+  lsBut.classList.remove('superactive');
+  ggBut.classList.remove('superactive');
+  emBut.classList.remove('superactive');
+  fbBut.classList.remove('superactive');
+
+  ggitems.classList.remove('images_block_appear');
+  ggitems.classList.add('display_none');
+
+  lsitems.classList.remove('images_block_appear');
+  lsitems.classList.add('display_none');
+
+  fbitems.classList.remove('images_block_appear');
+  fbitems.classList.add('display_none');
+
+  emitems.classList.remove('images_block_appear');
+  emitems.classList.add('display_none');
+
+  seitems.classList.remove('display_none');
+  setTimeout(() => {
+    seitems.classList.add('images_block_appear');
+
+    sesecondImg.classList.add('snd_move');
+    sefirstImg.classList.add('fst_move');
+  }, 10);
+});
+fbBut.addEventListener('click', () => {
+  fbBut.classList.add('superactive');
+  lsBut.classList.remove('superactive');
+  ggBut.classList.remove('superactive');
+  emBut.classList.remove('superactive');
+  seoBut.classList.remove('superactive');
+
+  ggitems.classList.remove('images_block_appear');
+  ggitems.classList.add('display_none');
+
+  lsitems.classList.remove('images_block_appear');
+  lsitems.classList.add('display_none');
+
+  seitems.classList.remove('images_block_appear');
+  seitems.classList.add('display_none');
+
+  emitems.classList.remove('images_block_appear');
+  emitems.classList.add('display_none');
+
+  fbitems.classList.remove('display_none');
+  setTimeout(() => {
+    fbitems.classList.add('images_block_appear');
+
+    fbsecondImg.classList.add('snd_move');
+    fbfirstImg.classList.add('fst_move');
+  }, 10);
+});
+lsBut.addEventListener('click', () => {
+  lsBut.classList.add('superactive');
+  fbBut.classList.remove('superactive');
+  ggBut.classList.remove('superactive');
+  emBut.classList.remove('superactive');
+  seoBut.classList.remove('superactive');
+
+  ggitems.classList.remove('images_block_appear');
+  ggitems.classList.add('display_none');
+
+  seitems.classList.remove('images_block_appear');
+  seitems.classList.add('display_none');
+
+  fbitems.classList.remove('images_block_appear');
+  fbitems.classList.add('display_none');
+
+  emitems.classList.remove('images_block_appear');
+  emitems.classList.add('display_none');
+
+  lsitems.classList.remove('display_none');
+  setTimeout(() => {
+    lsitems.classList.add('images_block_appear');
+
+    lssecondImg.classList.add('snd_move');
+    lsfirstImg.classList.add('fst_move');
+  }, 10);
+});
+emBut.addEventListener('click', () => {
+  emBut.classList.add('superactive');
+  fbBut.classList.remove('superactive');
+  ggBut.classList.remove('superactive');
+  lsBut.classList.remove('superactive');
+  seoBut.classList.remove('superactive');
+
+  ggitems.classList.remove('images_block_appear');
+  ggitems.classList.add('display_none');
+
+  seitems.classList.remove('images_block_appear');
+  seitems.classList.add('display_none');
+
+  fbitems.classList.remove('images_block_appear');
+  fbitems.classList.add('display_none');
+
+  lsitems.classList.remove('images_block_appear');
+  lsitems.classList.add('display_none');
+
+  emitems.classList.remove('display_none');
+  setTimeout(() => {
+    emitems.classList.add('images_block_appear');
+
+    emsecondImg.classList.add('snd_move');
+    emfirstImg.classList.add('fst_move');
+  }, 10);
+});
+ggBut.addEventListener('click', () => {
+  ggBut.classList.add('superactive');
+  fbBut.classList.remove('superactive');
+  emBut.classList.remove('superactive');
+  lsBut.classList.remove('superactive');
+  seoBut.classList.remove('superactive');
+
+  emitems.classList.remove('images_block_appear');
+  emitems.classList.add('display_none');
+
+  seitems.classList.remove('images_block_appear');
+  seitems.classList.add('display_none');
+
+  fbitems.classList.remove('images_block_appear');
+  fbitems.classList.add('display_none');
+
+  lsitems.classList.remove('images_block_appear');
+  lsitems.classList.add('display_none');
+
+  ggitems.classList.remove('display_none');
+  setTimeout(() => {
+    ggitems.classList.add('images_block_appear');
+
+    ggsecondImg.classList.add('snd_move');
+    ggfirstImg.classList.add('fst_move');
+  }, 10);
+});
+
+const allbut = document.querySelectorAll('.text_detecrot');
+
+setTimeout(() => {
+  allbut[0].click();
+  setInterval(() => {
+    allbut[0].click();
+  }, 20000);
+}, 0);
+
+setTimeout(() => {
+  allbut[1].click();
+  setInterval(() => {
+    allbut[1].click();
+  }, 20000);
+}, 4000);
+
+setTimeout(() => {
+  allbut[2].click();
+  setInterval(() => {
+    allbut[2].click();
+  }, 20000);
+}, 8000);
+
+setTimeout(() => {
+  allbut[3].click();
+  setInterval(() => {
+    allbut[3].click();
+  }, 20000);
+}, 12000);
+
+setTimeout(() => {
+  allbut[4].click();
+  setInterval(() => {
+    allbut[4].click();
+  }, 20000);
+}, 15999);
