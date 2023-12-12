@@ -392,10 +392,13 @@ svg {
   }
   .main_ask_wrapper {
     width: 100%;
+    align-items: flex-start;
+    gap: 20px;
   }
   .main_ask_box {
     background: transparent;
     box-shadow: none;
+    height: auto;
   }
   .main_ask_box_question {
     font-size: 27px;
@@ -404,12 +407,15 @@ svg {
     display: none;
   }
   .main_picture {
-    height: 541px;
+    height: auto;
   }
   .wrap_detectors {
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+  .mob_main_wrapper {
+    padding-top: 50px;
   }
   .wrap_3 {
     display: flex;
@@ -423,7 +429,8 @@ svg {
   }
   .main_ask_box_content_wrapper {
     height: auto;
-    gap: 100px;
+    gap: 30px;
+    justify-content: flex-start;
   }
   .mob_items_wrapper {
     padding: 20px;
