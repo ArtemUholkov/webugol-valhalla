@@ -155,16 +155,17 @@
   background: url(<path-to-image>), lightgray 50% / cover no-repeat;
   box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.gg_image {
+.gg_image,
+.fb_img {
   height: 200px;
   width: 450px;
 }
-.se_img1,
+/* .se_img1,
 .se_img2,
 .se_img3 {
   height: 220px;
   width: 450px;
-}
+} */
 .fst_img {
   position: absolute;
   top: 35%;
@@ -305,16 +306,17 @@ svg {
     width: 500px;
     height: 320px;
   }
-  .gg_image {
+  .gg_image,
+  .fb_img {
     height: 280px;
     width: 600px;
   }
-  .se_img1,
+  /* .se_img1,
   .se_img2,
   .se_img3 {
     height: 320px;
     width: 650px;
-  }
+  } */
   .fst_img {
     position: absolute;
     top: 32%;
@@ -363,16 +365,17 @@ svg {
   }
 }
 @media (max-width: 1200px) {
-  .gg_image {
+  .gg_image,
+  .fb_img {
     height: 150px;
     width: 335px;
   }
-  .se_img1,
+  /* .se_img1,
   .se_img2,
   .se_img3 {
     height: 160px;
     width: 335px;
-  }
+  } */
 }
 
 @media (max-width: 1100px) {
@@ -441,16 +444,17 @@ svg {
     height: 200px;
     width: 350px;
   }
-  .gg_image {
+  .gg_image,
+  .fb_img {
     height: 200px;
     width: 450px;
   }
-  .se_img1,
+  /* .se_img1,
   .se_img2,
   .se_img3 {
     height: 220px;
     width: 450px;
-  }
+  } */
   .text_detecrot {
     width: auto;
     font-size: 14px;
@@ -492,24 +496,26 @@ svg {
     height: 170px;
     width: 250px;
   }
-  .gg_image {
+  .gg_image,
+  .fb_img {
     height: 130px;
     width: 280px;
   }
-  .se_img1,
+  /* .se_img1,
   .se_img2,
   .se_img3 {
     height: 140px;
     width: 280px;
-  }
+  } */
 
   .fst_img {
     top: 56%;
-    left: 7%;
+    left: 0;
   }
   .snd_img {
     top: 19%;
-    left: 43%;
+    left: auto;
+    right: 0;
   }
 
   .fst_move {
@@ -522,11 +528,12 @@ svg {
 @media (max-width: 558px) {
   .fst_img {
     top: 56%;
-    left: 7%;
+    left: 0;
   }
   .snd_img {
-    top: 19%;
-    left: 23%;
+    top: 10%;
+    right: 0;
+    left: auto;
   }
 }
 @media (max-width: 400px) {
@@ -542,7 +549,8 @@ svg {
   }
   .snd_img {
     top: 15%;
-    left: 14%;
+    left: auto;
+    right: 0;
   }
 
   .fst_move {

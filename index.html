@@ -43,8 +43,15 @@
             <li><p class="nav_elem" onclick="scrollToNumbers()">Projects</p></li>
             <li><p class="nav_elem" onclick="scrollToSolutions()">Solutions</p></li>
             <li><p class="nav_elem" onclick="scrollToProcess()">Process</p></li>
-            <li><p class="nav_elem" onclick="scrollToReviews()">Clients reviews</p></li>
-            <li><p class="nav_elem" onclick="scrollToTeam()">Team</p></li>
+            <li>
+              <p class="nav_elem" onclick="scrollToReviews()">Clients reviews</p>
+            </li>
+            <li>
+              <!-- <p class="nav_elem" onclick="scrollToTeam()">Team</p> -->
+              <a href="https://valhallams.com/pharmacy-accounts/" class="nav_elem"
+                >Pharmacy accounts</a
+              >
+            </li>
           </ul>
           <div class="header_button_pair">
             <a href="#contacts" class="main_button" onclick="scrollToSub()"
@@ -73,7 +80,9 @@
                 <p class="nav_elem_mobile" onclick="scrollToReviews()">Clients reviews</p>
               </li>
               <li>
-                <p class="nav_elem_mobile" onclick="scrollToTeam()">Team</p>
+                <a href="https://valhallams.com/pharmacy-accounts/" class="nav_elem_mobile"
+                  >Pharmacy accounts</a
+                >
               </li>
             </ul>
             <div class="header_button_pair mob_menu_buttons">
@@ -108,9 +117,9 @@
         </div>
         <div class="main_items_wrapper">
           <div class="main_items_facebook display_none">
-            <img src="img/main/fb3.png" alt="fb" class="main_items_image fst_img" />
-            <img src="img/main/fb2.png" alt="fb" class="main_items_image snd_img" />
-            <img src="img/main/fb1.png" alt="fb" class="main_items_image trd_img" />
+            <img src="img/main/fb3.png" alt="fb" class="main_items_image fb_img fst_img" />
+            <img src="img/main/fb2.png" alt="fb" class="main_items_image fb_img snd_img" />
+            <img src="img/main/fb1.png" alt="fb" class="main_items_image fb_img trd_img" />
           </div>
           <div class="main_items_google images_block_appear">
             <img
@@ -130,9 +139,21 @@
             />
           </div>
           <div class="main_items_em display_none">
-            <img src="img/main/em1.png" alt="emailing" class="main_items_image fst_img em_img1" />
-            <img src="img/main/em2.png" alt="emailing" class="main_items_image snd_img em_img2" />
-            <img src="img/main/em3.png" alt="emailing" class="main_items_image trd_img em_img3" />
+            <img
+              src="img/main/em1.png"
+              alt="emailing"
+              class="main_items_image gg_image fst_img em_img1"
+            />
+            <img
+              src="img/main/em2.png"
+              alt="emailing"
+              class="main_items_image gg_image snd_img em_img2"
+            />
+            <img
+              src="img/main/em3.png"
+              alt="emailing"
+              class="main_items_image gg_image trd_img em_img3"
+            />
           </div>
           <div class="main_items_ls display_none">
             <img
@@ -197,8 +218,8 @@
         </div>
         <div class="main_items_wrapper mob_items_wrapper">
           <div class="main_items_facebook display_none mob_fb">
-            <img src="img/main/fb3.png" alt="fb" class="main_items_image fst_img" />
-            <img src="img/main/fb2.png" alt="fb" class="main_items_image snd_img" />
+            <img src="img/main/fb3.png" alt="fb" class="main_items_image gg_image fst_img" />
+            <img src="img/main/fb2.png" alt="fb" class="main_items_image gg_image snd_img" />
           </div>
           <div class="main_items_google mob_gg images_block_appear">
             <img
@@ -213,8 +234,16 @@
             />
           </div>
           <div class="main_items_em display_none mob_em">
-            <img src="img/main/em1.png" alt="em" class="main_items_image fst_img em_img1" />
-            <img src="img/main/em2.png" alt="em" class="main_items_image snd_img em_img2" />
+            <img
+              src="img/main/em1.png"
+              alt="em"
+              class="main_items_image gg_image fst_img em_img1"
+            />
+            <img
+              src="img/main/em2.png"
+              alt="em"
+              class="main_items_image gg_image snd_img em_img2"
+            />
           </div>
           <div class="main_items_ls display_none mob_ls">
             <img
@@ -229,8 +258,16 @@
             />
           </div>
           <div class="main_items_se display_none mob_se">
-            <img src="img/main/se1.png" alt="se" class="main_items_image fst_img se_img1" />
-            <img src="img/main/se2.png" alt="se" class="main_items_image snd_img se_img2" />
+            <img
+              src="img/main/se1.png"
+              alt="se"
+              class="main_items_image gg_image fst_img se_img1"
+            />
+            <img
+              src="img/main/se2.png"
+              alt="se"
+              class="main_items_image gg_image snd_img se_img2"
+            />
           </div>
         </div>
       </div>
@@ -238,7 +275,7 @@
     <section class="numbers" id="numbers">
       <div class="number_wrapper">
         <p class="numbers_text pc_text" data-aos="fade-up" data-aos-duration="2000">
-          Here are the numbers generated for our clients for the last 3 years:
+          Here are the numbers generated for our health & wellness clients for the last 3 years:
         </p>
         <p class="numbers_text mob_text" data-aos="fade-up" data-aos-duration="1000">
           Results generated in August 2023:
@@ -269,102 +306,139 @@
       </div>
       <div class="running-line lefttoright pad-fix" data-aos="zoom-in" data-aos-duration="2000">
         <div class="running-line_wrapper img_running_line">
-          <img src="img/clients/bildex.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/stairs.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/drobot.png" alt="corechair" class="running_line_img corechair" />
           <img
-            src="img/clients/servicedeck.png"
+            src="img/clients/3.png"
             alt="corechair"
-            class="running_line_img corechair"
+            class="running_line_img corechair main_corechair"
           />
-          <img src="img/clients/lily.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/4.png" alt="corechair" class="running_line_img corechair" />
           <img
-            src="img/clients/mainstream.png"
+            src="img/clients/5.png"
             alt="corechair"
-            class="running_line_img corechair"
+            class="running_line_img corechair main_corechair"
           />
-          <img src="img/clients/mcs.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/DS.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/quyality.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/bryer.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/8.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/11.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/10.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/9.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/ds.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/12.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/8.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/car.png" alt="corechair" class="running_line_img main_corechair" />
+          <img
+            src="img/clients/3.png"
+            alt="corechair"
+            class="running_line_img corechair main_corechair"
+          />
+          <img src="img/clients/4.png" alt="corechair" class="running_line_img corechair" />
+          <img
+            src="img/clients/5.png"
+            alt="corechair"
+            class="running_line_img corechair main_corechair"
+          />
+          <img src="img/clients/8.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/11.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/10.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/9.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/ds.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/12.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/8.png" alt="corechair" class="running_line_img corechair" />
           <img src="img/clients/car.png" alt="corechair" class="running_line_img main_corechair" />
         </div>
         <div class="running-line_wrapper img_running_line">
-          <img src="img/clients/bildex.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/stairs.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/drobot.png" alt="corechair" class="running_line_img corechair" />
           <img
-            src="img/clients/servicedeck.png"
+            src="img/clients/3.png"
             alt="corechair"
-            class="running_line_img corechair"
+            class="running_line_img corechair main_corechair"
           />
-          <img src="img/clients/lily.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/4.png" alt="corechair" class="running_line_img corechair" />
           <img
-            src="img/clients/mainstream.png"
+            src="img/clients/5.png"
             alt="corechair"
-            class="running_line_img corechair"
+            class="running_line_img corechair main_corechair"
           />
-          <img src="img/clients/mcs.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/DS.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/quyality.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/bryer.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/8.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/10.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/11.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/9.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/ds.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/12.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/8.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/car.png" alt="corechair" class="running_line_img main_corechair" />
+          <img src="img/clients/9.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/ds.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/12.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/8.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/car.png" alt="corechair" class="running_line_img main_corechair" />
+          <img src="img/clients/9.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/ds.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/12.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/8.png" alt="corechair" class="running_line_img corechair" />
           <img src="img/clients/car.png" alt="corechair" class="running_line_img main_corechair" />
         </div>
       </div>
       <div class="running-line imgrighttoleft pad-fix" data-aos="zoom-in" data-aos-duration="2000">
         <div class="running-line_wrapper img_running_line">
           <img
-            src="img/clients/corechair.png"
+            src="img/clients/3.png"
             alt="corechair"
-            class="running_line_img main_corechair"
+            class="running_line_img corechair main_corechair"
           />
+          <img src="img/clients/4.png" alt="corechair" class="running_line_img corechair" />
           <img
-            src="img/clients/lhk.png"
-            alt="lady health Klinik"
-            class="running_line_img lhk"
-          /><img
-            src="img/clients/servotech.png"
-            alt="servotech"
-            class="running_line_img servotech"
+            src="img/clients/5.png"
+            alt="corechair"
+            class="running_line_img corechair main_corechair"
           />
-          <img src="img/clients/optyx.png" alt="optyx" class="running_line_img optyx" /><img
-            src="img/clients/valhalla.png"
-            alt="valhalla"
-            class="running_line_img valhalla"
-          />
-          <img src="img/clients/revamp.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/valhala.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/fitfest.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/canadian.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/KK.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/uniol.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/8.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/10.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/11.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/9.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/ds.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/12.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/8.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/car.png" alt="corechair" class="running_line_img main_corechair" />
+          <img src="img/clients/9.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/ds.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/12.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/8.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/car.png" alt="corechair" class="running_line_img main_corechair" />
+          <img src="img/clients/9.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/ds.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/12.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/8.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/car.png" alt="corechair" class="running_line_img main_corechair" />
         </div>
         <div class="running-line_wrapper img_running_line">
           <img
-            src="img/clients/corechair.png"
+            src="img/clients/3.png"
             alt="corechair"
-            class="running_line_img main_corechair"
+            class="running_line_img corechair main_corechair"
           />
+          <img src="img/clients/4.png" alt="corechair" class="running_line_img corechair" />
           <img
-            src="img/clients/lhk.png"
-            alt="lady health Klinik"
-            class="running_line_img lhk"
-          /><img
-            src="img/clients/servotech.png"
-            alt="servotech"
-            class="running_line_img servotech"
+            src="img/clients/5.png"
+            alt="corechair"
+            class="running_line_img corechair main_corechair"
           />
-          <img src="img/clients/optyx.png" alt="optyx" class="running_line_img optyx" /><img
-            src="img/clients/valhalla.png"
-            alt="valhalla"
-            class="running_line_img valhalla"
-          />
-          <img src="img/clients/revamp.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/valhala.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/fitfest.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/canadian.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/KK.png" alt="corechair" class="running_line_img corechair" />
-          <img src="img/clients/uniol.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/8.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/10.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/11.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/9.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/ds.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/12.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/8.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/car.png" alt="corechair" class="running_line_img main_corechair" />
+          <img src="img/clients/9.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/ds.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/12.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/8.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/car.png" alt="corechair" class="running_line_img main_corechair" />
+          <img src="img/clients/9.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/ds.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/12.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/8.png" alt="corechair" class="running_line_img corechair" />
+          <img src="img/clients/car.png" alt="corechair" class="running_line_img main_corechair" />
         </div>
       </div>
     </section>
@@ -772,7 +846,7 @@
         <div class="footer_texts_wrapper">
           <img src="img/footer/valhallalogo.png" alt="logo" class="footer_logo_valhalla" />
 
-          <p class="footer_text">292-18 Rockaway Beach Blvd, Queens, New York 11693</p>
+          <p class="footer_text">92-18 Rockaway Beach Blvd, Queens, New York 11693</p>
           <div class="phone_mail_wrapper">
             <a href="tel:+15162666267" class="footer_text footer_phone">+15162666267</a>
           </div>

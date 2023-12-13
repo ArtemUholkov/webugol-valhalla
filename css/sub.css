@@ -72,6 +72,7 @@
 
   .sub {
     padding: 60px 20px;
+    padding-bottom: 0px;
   }
   .sub_content_text {
     text-align: center;

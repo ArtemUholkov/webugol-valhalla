@@ -101,6 +101,7 @@ header {
 .nav_elem:hover {
   color: #737373;
   transition: 0.5s;
+  text-decoration: none;
 }
 .nav_elem:after {
   content: '';

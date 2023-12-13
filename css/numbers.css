@@ -1,6 +1,6 @@
 .numbers {
   padding-top: 120px;
-  padding-bottom: 120px;
+
   overflow: hidden;
 }
 .number_wrapper {
@@ -53,13 +53,14 @@
 .img_running_line {
   gap: 83px;
 }
-.main_corechair {
-  max-width: 163px;
-  max-height: 129px;
-}
+
 .corechair {
   max-width: 190px;
   max-height: 190px;
+}
+.main_corechair {
+  max-width: 163px;
+  max-height: 129px;
 }
 .lhk {
   max-width: 258px;
@@ -99,7 +100,7 @@
     transform: translateX(0%);
   }
   to {
-    transform: translateX(160%);
+    transform: translateX(150%);
   }
 }
 
@@ -108,7 +109,7 @@
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-160%);
+    transform: translateX(-150%);
   }
 }
 
@@ -177,19 +178,18 @@
     width: 90%;
     margin: 0 auto;
     padding: 0 0;
-    padding-bottom: 40px;
   }
   .numbers_items_line_wrapper {
     align-items: center;
   }
 
-  .main_corechair {
-    max-width: 103px;
-    max-height: 82px;
-  }
   .corechair {
     max-width: 150px;
     max-height: 150px;
+  }
+  .main_corechair {
+    max-width: 103px;
+    max-height: 82px;
   }
   .lhk {
     width: 164.002px;
@@ -211,8 +211,7 @@
     gap: 40px;
   }
   .numbers {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-top: 0px;
   }
   .lefttoright {
     animation: lefttorightmob 35s infinite alternate linear;

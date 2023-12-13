@@ -92,6 +92,7 @@
 @media (max-width: 1490px) {
   .footer_texts_wrapper {
     max-width: 350px;
+    width: 100%;
   }
 }
 @media (max-width: 1210px) {

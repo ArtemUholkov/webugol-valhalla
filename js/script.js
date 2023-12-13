@@ -250,38 +250,62 @@ ggBut.addEventListener('click', () => {
 });
 
 const allbut = document.querySelectorAll('.text_detecrot');
-
-setTimeout(() => {
+let int1ID;
+let int2ID;
+let int3ID;
+let int4ID;
+let int5ID;
+let tim1ID;
+let tim2ID;
+let tim3ID;
+let tim4ID;
+let tim5ID;
+tim1ID = setTimeout(() => {
   allbut[0].click();
-  setInterval(() => {
+  int1ID = setInterval(() => {
     allbut[0].click();
   }, 20000);
 }, 0);
 
-setTimeout(() => {
+tim2ID = setTimeout(() => {
   allbut[1].click();
-  setInterval(() => {
+  int2ID = setInterval(() => {
     allbut[1].click();
   }, 20000);
 }, 4000);
 
-setTimeout(() => {
+tim3ID = setTimeout(() => {
   allbut[2].click();
-  setInterval(() => {
+  int3ID = setInterval(() => {
     allbut[2].click();
   }, 20000);
 }, 8000);
 
-setTimeout(() => {
+tim4ID = setTimeout(() => {
   allbut[3].click();
-  setInterval(() => {
+  int4ID = setInterval(() => {
     allbut[3].click();
   }, 20000);
 }, 12000);
 
-setTimeout(() => {
+tim5ID = setTimeout(() => {
   allbut[4].click();
-  setInterval(() => {
+  int5ID = setInterval(() => {
     allbut[4].click();
   }, 20000);
 }, 15999);
+
+const detect = document.querySelector('.wrap_detectors');
+
+detect.addEventListener('mousedown', () => {
+  clearInterval(int1ID);
+  clearInterval(int2ID);
+  clearInterval(int3ID);
+  clearInterval(int4ID);
+  clearInterval(int5ID);
+  clearTimeout(tim1ID);
+  clearTimeout(tim2ID);
+  clearTimeout(tim3ID);
+  clearTimeout(tim4ID);
+  clearTimeout(tim5ID);
+});
