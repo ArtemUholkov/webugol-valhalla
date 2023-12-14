@@ -18,6 +18,9 @@ header {
 .main_picture {
   height: 100svh;
 }
+.step_main_picture {
+  height: auto;
+}
 
 @media (max-width: 600px) {
   .main_picture_content_wrapper {
