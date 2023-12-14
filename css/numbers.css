@@ -168,7 +168,6 @@
     gap: 24px;
   }
   .numbers_item_number {
-    /* align-self: flex-start; */
     font-size: 48px;
   }
   .numbers_item_subtext {
