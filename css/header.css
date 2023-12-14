@@ -126,7 +126,7 @@ header {
     padding: 24px 100px 16px 100px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1240px) {
   .header_wrapper {
     padding: 24px 20px 16px 20px;
   }
