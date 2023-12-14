@@ -30,6 +30,9 @@
   height: 100%;
   width: auto;
 }
+.sm_img {
+  height: 100px;
+}
 .rev_comp {
   color: #111;
 
@@ -73,6 +76,9 @@
     font-size: 20px;
   }
   .rev_img_wrap {
+    height: 60px;
+  }
+  .sm_img {
     height: 60px;
   }
 }
