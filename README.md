@@ -10,7 +10,7 @@ I used HTML, CSS, JS in this project.
 
 ---
 
-###What was interesting in this project:
+### What was interesting in this project:
 
 1. Interesting view of main section. Swiper autosliding and depends on active slide correct tables appearing in the middle.
 
