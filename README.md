@@ -1,4 +1,4 @@
-# Eco Group Invest (real order)
+# Valhalla MS (real order)
 
 [Here you can check it](https://artemuholkov.github.io/webugol-valhalla/)
 
@@ -27,3 +27,7 @@ I used HTML, CSS, JS in this project.
 4. Embed form from jotforms
 
 ![form](embedform.png)
+
+5. Mobile view of main section custom built without any libraries, clean JS code
+
+![mobmain](mobmain.png)
