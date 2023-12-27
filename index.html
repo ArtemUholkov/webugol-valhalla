@@ -1,59 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript
-        ><iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-5FSV2DCS"
-          height="0"
-          width="0"
-          style="display: none; visibility: hidden"
-        ></iframe
-      ></noscript>
-      <!-- End Google Tag Manager (noscript) -->
-      <!-- Meta Pixel Code -->
-      <script>
-        !(function (f, b, e, v, n, t, s) {
-          if (f.fbq) return;
-          n = f.fbq = function () {
-            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-          };
-          if (!f._fbq) f._fbq = n;
-          n.push = n;
-          n.loaded = !0;
-          n.version = '2.0';
-          n.queue = [];
-          t = b.createElement(e);
-          t.async = !0;
-          t.src = v;
-          s = b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t, s);
-        })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '890292989287010');
-        fbq('track', 'PageView');
-      </script>
-      <noscript
-        ><img
-          height="1"
-          width="1"
-          style="display: none"
-          src="https://www.facebook.com/tr?id=890292989287010&ev=PageView&noscript=1"
-      /></noscript>
-      <!-- End Meta Pixel Code -->
-      <!-- Google Tag Manager -->
-      <script>
-        (function (w, d, s, l, i) {
-          w[l] = w[l] || [];
-          w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-          var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-          j.async = true;
-          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-          f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5FSV2DCS');
-      </script>
-      <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5FSV2DCS"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '890292989287010');
+      fbq('track', 'PageView');
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=890292989287010&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -84,6 +70,20 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5FSV2DCS');
+    </script>
+    <!-- End Google Tag Manager -->
     <header class="header">
       <div class="header_wrapper mycontainer">
         <nav class="navbar">
@@ -257,7 +257,7 @@
     </section>
     <section class="mob_main">
       <div class="mob_main_wrapper">
-        <div class="wrap_detectors">
+        <!-- <div class="wrap_detectors">
           <div class="wrap_3">
             <div class="text_detecrot seo_but" id="se">SEO</div>
             <div class="text_detecrot fb_but" id="fb">Facebook ads</div>
@@ -267,11 +267,36 @@
             <div class="text_detecrot em_but" id="em">Emailing</div>
             <div class="text_detecrot gg_but" id="gg">Google ads</div>
           </div>
+        </div> -->
+        <div class="swiper mySwipermob">
+          <div class="swiper-wrapper main_swiper_wrapper">
+            <div class="swiper-slide main_slide" id="se">SEO</div>
+            <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
+
+            <div class="swiper-slide main_slide" id="em">Emailing</div>
+            <div class="swiper-slide main_slide" id="ls">Local SEO</div>
+            <div class="swiper-slide main_slide" id="gg">Google ads</div>
+
+            <div class="swiper-slide main_slide" id="se">SEO</div>
+            <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
+
+            <div class="swiper-slide main_slide" id="em">Emailing</div>
+            <div class="swiper-slide main_slide" id="ls">Local SEO</div>
+            <div class="swiper-slide main_slide" id="gg">Google ads</div>
+
+            <div class="swiper-slide main_slide" id="se">SEO</div>
+            <div class="swiper-slide main_slide" id="fb">Facebook ads</div>
+
+            <div class="swiper-slide main_slide" id="em">Emailing</div>
+            <div class="swiper-slide main_slide" id="ls">Local SEO</div>
+            <div class="swiper-slide main_slide" id="gg">Google ads</div>
+          </div>
         </div>
         <div class="main_items_wrapper mob_items_wrapper">
           <div class="main_items_facebook display_none mob_fb">
             <img src="img/main/fb3.png" alt="fb" class="main_items_image gg_image fst_img" />
             <img src="img/main/fb2.png" alt="fb" class="main_items_image gg_image snd_img" />
+            <img src="img/main/fb1.png" alt="fb" class="main_items_image gg_image trd_img" />
           </div>
           <div class="main_items_google mob_gg images_block_appear">
             <img
@@ -283,6 +308,11 @@
               src="img/main/gg2.png"
               alt="gg"
               class="main_items_image gg_image snd_img ggsnd_img"
+            />
+            <img
+              src="img/main/gg3.png"
+              alt="gg"
+              class="main_items_image gg_image trd_img ggtrd_img"
             />
           </div>
           <div class="main_items_em display_none mob_em">
@@ -296,6 +326,11 @@
               alt="em"
               class="main_items_image gg_image snd_img em_img2"
             />
+            <img
+              src="img/main/em3.png"
+              alt="emailing"
+              class="main_items_image gg_image trd_img em_img3"
+            />
           </div>
           <div class="main_items_ls display_none mob_ls">
             <img
@@ -308,6 +343,11 @@
               alt="local"
               class="main_items_image gg_image snd_img lssnd_img"
             />
+            <img
+              src="img/main/ls3.png"
+              alt="local seo"
+              class="main_items_image gg_image trd_img lstrd_img"
+            />
           </div>
           <div class="main_items_se display_none mob_se">
             <img
@@ -319,6 +359,11 @@
               src="img/main/se2.png"
               alt="se"
               class="main_items_image gg_image snd_img se_img2"
+            />
+            <img
+              src="img/main/se3.png"
+              alt="seo"
+              class="main_items_image gg_image trd_img se_img3"
             />
           </div>
         </div>
@@ -711,10 +756,10 @@
             <p class="rev_comp">Alive Total Wellness</p>
             <p class="rev_place">Local SEO, Creative Landing Page and Google Ads</p>
             <p class="rev_rev">
-              “Valhalla MS's creative landing page and Google Ads transformed Alive Total Wellness.
+              Valhalla MS's creative landing page and Google Ads transformed Alive Total Wellness.
               The captivating design effectively showcases our wellness services, and their
               strategic Ads approach consistently drives targeted traffic. We're pleased with the
-              results and appreciate Valhalla MS's collaborative approach.”
+              results and appreciate Valhalla MS's collaborative approach.
             </p>
           </div>
           <div class="rev_item" data-aos="fade-up">
@@ -724,10 +769,10 @@
             <p class="rev_comp">A&S Medical</p>
             <p class="rev_place">Local SEO and Review Management</p>
             <p class="rev_rev">
-              “Valhalla MS Company has been instrumental in enhancing our online presence through
+              Valhalla MS Company has been instrumental in enhancing our online presence through
               their Local SEO services. Their commitment to regular posting has significantly
               boosted our visibility in the local community. We appreciate their dedication to
-              building a positive online reputation for A&S Medical.”
+              building a positive online reputation for A&S Medical.
             </p>
           </div>
           <div class="rev_item" data-aos="fade-up">
@@ -737,10 +782,10 @@
             <p class="rev_comp">Lody Health Klinik</p>
             <p class="rev_place">Local SEO, Google Ads, Facebook Ads, SEO</p>
             <p class="rev_rev">
-              “The creative landing page and Google Ads from Valhalla MS have genuinely enhanced
+              The creative landing page and Google Ads from Valhalla MS have genuinely enhanced
               Purelivity Wellness. The visually appealing page and well-planned Ads have greatly
               increased our online presence and interaction. We're impressed by the remarkable value
-              and professionalism demonstrated by the Valhalla MS team.”
+              and professionalism demonstrated by the Valhalla MS team.
             </p>
           </div>
         </div>
@@ -880,6 +925,179 @@
 
         const seslides = document.querySelectorAll('#se');
         const seitems = document.querySelector('.main_items_se');
+
+        const fbthirdImg = document.querySelector('.trd_img');
+        const fbsecondImg = document.querySelector('.snd_img');
+        const fbfirstImg = document.querySelector('.fst_img');
+
+        const ggthirdImg = document.querySelector('.ggtrd_img');
+        const ggsecondImg = document.querySelector('.ggsnd_img');
+        const ggfirstImg = document.querySelector('.ggfst_img');
+
+        const emthirdImg = document.querySelector('.em_img3');
+        const emsecondImg = document.querySelector('.em_img2');
+        const emfirstImg = document.querySelector('.em_img1');
+
+        const lsthirdImg = document.querySelector('.lstrd_img');
+        const lssecondImg = document.querySelector('.lssnd_img');
+        const lsfirstImg = document.querySelector('.lsfst_img');
+
+        const sethirdImg = document.querySelector('.se_img3');
+        const sesecondImg = document.querySelector('.se_img2');
+        const sefirstImg = document.querySelector('.se_img1');
+
+        swiper.on('slideChangeTransitionStart', () => {
+          for (let i = 0; i < fbslides.length; i++) {
+            if (fbslides[i].classList.contains('swiper-slide-active')) {
+              fbitems.classList.remove('display_none');
+              setTimeout(() => {
+                fbitems.classList.add('images_block_appear');
+                fbthirdImg.classList.add('trd_move');
+                fbsecondImg.classList.add('snd_move');
+                fbfirstImg.classList.add('fst_move');
+                swiper.update();
+              }, 1);
+              break;
+            } else {
+              fbitems.classList.remove('images_block_appear');
+              fbthirdImg.classList.remove('trd_move');
+              fbsecondImg.classList.remove('snd_move');
+              fbfirstImg.classList.remove('fst_move');
+
+              fbitems.classList.add('display_none');
+              swiper.update();
+            }
+          }
+          for (let i = 0; i < ggslides.length; i++) {
+            if (ggslides[i].classList.contains('swiper-slide-active')) {
+              ggitems.classList.remove('display_none');
+              setTimeout(() => {
+                ggitems.classList.add('images_block_appear');
+                ggthirdImg.classList.add('trd_move');
+                ggsecondImg.classList.add('snd_move');
+                ggfirstImg.classList.add('fst_move');
+                swiper.update();
+              }, 10);
+              break;
+            } else {
+              ggitems.classList.remove('images_block_appear');
+              ggthirdImg.classList.remove('trd_move');
+              ggsecondImg.classList.remove('snd_move');
+              ggfirstImg.classList.remove('fst_move');
+
+              ggitems.classList.add('display_none');
+              swiper.update();
+            }
+          }
+          for (let i = 0; i < emslides.length; i++) {
+            if (emslides[i].classList.contains('swiper-slide-active')) {
+              emitems.classList.remove('display_none');
+              setTimeout(() => {
+                emitems.classList.add('images_block_appear');
+                emthirdImg.classList.add('trd_move');
+                emsecondImg.classList.add('snd_move');
+                emfirstImg.classList.add('fst_move');
+                swiper.update();
+              }, 10);
+              break;
+            } else {
+              emitems.classList.remove('images_block_appear');
+              emthirdImg.classList.remove('trd_move');
+              emsecondImg.classList.remove('snd_move');
+              emfirstImg.classList.remove('fst_move');
+
+              emitems.classList.add('display_none');
+              swiper.update();
+            }
+          }
+          for (let i = 0; i < lsslides.length; i++) {
+            if (lsslides[i].classList.contains('swiper-slide-active')) {
+              lsitems.classList.remove('display_none');
+              setTimeout(() => {
+                lsitems.classList.add('images_block_appear');
+                lsthirdImg.classList.add('trd_move');
+                lssecondImg.classList.add('snd_move');
+                lsfirstImg.classList.add('fst_move');
+                swiper.update();
+              }, 10);
+              break;
+            } else {
+              lsitems.classList.remove('images_block_appear');
+              lsthirdImg.classList.remove('trd_move');
+              lssecondImg.classList.remove('snd_move');
+              lsfirstImg.classList.remove('fst_move');
+
+              lsitems.classList.add('display_none');
+              swiper.update();
+            }
+          }
+          for (let i = 0; i < seslides.length; i++) {
+            if (seslides[i].classList.contains('swiper-slide-active')) {
+              seitems.classList.remove('display_none');
+              setTimeout(() => {
+                seitems.classList.add('images_block_appear');
+                sethirdImg.classList.add('trd_move');
+                sesecondImg.classList.add('snd_move');
+                sefirstImg.classList.add('fst_move');
+                swiper.update();
+              }, 10);
+              break;
+            } else {
+              seitems.classList.remove('images_block_appear');
+              sethirdImg.classList.remove('trd_move');
+              sesecondImg.classList.remove('snd_move');
+              sefirstImg.classList.remove('fst_move');
+
+              seitems.classList.add('display_none');
+              swiper.update();
+            }
+          }
+        });
+      }
+    </script>
+    <script>
+      if (window.innerWidth < 950) {
+        var swiper = new Swiper('.mySwipermob', {
+          slidesPerView: 2,
+          centeredSlides: true,
+          loop: true,
+          autoplay: {
+            delay: 4000,
+          },
+
+          slideToClickedSlide: true,
+          initialSlide: 4,
+          slidesOffsetAfter: 150,
+          // freeMode: {
+          //   enabled: true,
+          //   sticky: true,
+          // },
+          breakpoints: {
+            1100: {
+              slidesPerView: 2.8,
+            },
+
+            1500: {
+              slidesPerView: 3.8,
+            },
+          },
+        });
+        const picturesWrapper = document.querySelector('.main_items_wrapper');
+
+        const fbslides = document.querySelectorAll('#fb');
+        const fbitems = document.querySelector('.mob_fb');
+
+        const ggslides = document.querySelectorAll('#gg');
+        const ggitems = document.querySelector('.mob_gg');
+
+        const emslides = document.querySelectorAll('#em');
+        const emitems = document.querySelector('.mob_em');
+
+        const lsslides = document.querySelectorAll('#ls');
+        const lsitems = document.querySelector('.mob_ls');
+
+        const seslides = document.querySelectorAll('#se');
+        const seitems = document.querySelector('.mob_se');
 
         const fbthirdImg = document.querySelector('.trd_img');
         const fbsecondImg = document.querySelector('.snd_img');
