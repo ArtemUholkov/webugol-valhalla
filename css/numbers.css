@@ -177,6 +177,7 @@
     width: 90%;
     margin: 0 auto;
     padding: 0 0;
+    padding-bottom: 30px;
   }
   .numbers_items_line_wrapper {
     align-items: center;
