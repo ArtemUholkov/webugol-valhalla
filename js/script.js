@@ -309,3 +309,8 @@ detect.addEventListener('mousedown', () => {
   clearTimeout(tim4ID);
   clearTimeout(tim5ID);
 });
+
+setTimeout(() => {
+  let jotform = document.querySelector('#240073049022343');
+  jotform.style.height = '375px';
+}, 1000);
