@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!-- Google Tag Manager (noscript) -->
+        <noscript
+        ><iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-5FSV2DCS"
+          height="0"
+          width="0"
+          style="display: none; visibility: hidden"
+        ></iframe
+      ></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      <!-- Meta Pixel Code -->
+      <script>
+        !(function (f, b, e, v, n, t, s) {
+          if (f.fbq) return;
+          n = f.fbq = function () {
+            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+          };
+          if (!f._fbq) f._fbq = n;
+          n.push = n;
+          n.loaded = !0;
+          n.version = '2.0';
+          n.queue = [];
+          t = b.createElement(e);
+          t.async = !0;
+          t.src = v;
+          s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s);
+        })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '890292989287010');
+        fbq('track', 'PageView');
+      </script>
+      <noscript
+        ><img
+          height="1"
+          width="1"
+          style="display: none"
+          src="https://www.facebook.com/tr?id=890292989287010&ev=PageView&noscript=1"
+      /></noscript>
+      <!-- End Meta Pixel Code -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--FONTS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Thank you!</title>
+    <link rel="icon" type="image/x-icon" href="img/global/favicon.png" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/mainfile.css" />
+    <link rel="stylesheet" href="css/thankyou.css" />
+  </head>
+  <body>
+  <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5FSV2DCS');
+    </script>
+    <!-- End Google Tag Manager -->
+    <header class="header">
+      <div class="header_wrapper mycontainer">
+        <nav class="navbar">
+          <a href="https://valhallams.com" class="logo_wrapper">
+            <img src="img/global/logo.png" alt="logo" class="main-logo logo-white" />
+            <img
+              src="img/global/logo-color.png"
+              alt="logo"
+              class="main-logo logo-hide logo-color"
+            />
+          </a>
+
+          <ul class="navbar_menu"></ul>
+        </nav>
+      </div>
+    </header>
+    <section class="main_picture">
+      <video autoplay muted loop id="video">
+        <source src="img/main/bgvideo.mp4" type="video/mp4" />
+      </video>
+      <div class="main_picture_content_wrapper" id="container">
+        <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+          Thank you!<br />
+          We will contact you soon!
+        </h1>
+        <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+          <a
+            href="https://valhallams.com/"
+            class="main_button mob_button main_picture_button"
+            onclick="scrollToSub()"
+            >Back to main page</a
+          >
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
